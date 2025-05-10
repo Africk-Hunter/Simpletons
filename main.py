@@ -1,5 +1,4 @@
 import random
-import sys
 import time
 
 def advance_time(current_time):
@@ -37,12 +36,12 @@ def create_random_character():
     traits = ['clumsy', 'courageous', 'lazy', 'nonchalant', 'hyper' ]
 
     random.shuffle(traits)
-    chosen_traits = [traits[0: random.randint(1, 3)]]
+    chosen_traits = traits[0: random.randint(1, 3)]
 
-    person = Character(random.choice(names), random.choice(chosen_traits), 0)
-    return person
+    character = Character(random.choice(names), random.choice(chosen_traits), 0)
+    return character
 
-def create_character(characters):
+def create_character(characters): ## Add handling for random or custom created characters maybe?
     characters.append(create_random_character())
     return
 
@@ -56,6 +55,10 @@ def create_current_time_for_printing(character, time):
     
     statement = "[" + str(hour) + ":" + str(minutes) + "]"
     return statement
+
+def pick_action(character):
+    return
+
 
 def determine_character_actions(characters, time):
     for character in characters:
@@ -75,7 +78,7 @@ def run_application():
     while time >= 0:
         
         determine_character_actions(characters, time)
-        """ print(create_current_time_for_printing(characters[time], time), characters[time].print_characteristics()) """
+        print(create_current_time_for_printing(characters[time], time), characters[time].print_characteristics())
         time = advance_time(time)
 
 
