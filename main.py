@@ -1,9 +1,10 @@
 import random
 import time
+import json
 
 def advance_time(current_time):
     
-    if time == 1440:
+    if current_time == 1440:
         current_time = 0
     else:
         current_time += 1
@@ -39,11 +40,16 @@ def create_random_character():
     chosen_traits = traits[0: random.randint(1, 3)]
 
     character = Character(random.choice(names), random.choice(chosen_traits), 0)
+    print("Character Traits For " + character.name + ": " + character.traits)
     return character
+
+
 
 def create_character(characters): ## Add handling for random or custom created characters maybe?
     characters.append(create_random_character())
     return
+
+
 
 def create_current_time_for_printing(character, time):
     if time < 60:
@@ -56,7 +62,31 @@ def create_current_time_for_printing(character, time):
     statement = "[" + str(hour) + ":" + str(minutes) + "]"
     return statement
 
+
+def is_valid_action(action, traits):
+    print(action)
+    if any(trait in action["excluded_traits"] for trait in traits):
+        print('Has one of excluded traits: ', action["excluded_traits"])
+        return False
+    if not any(trait in action["required_traits"] for trait in traits):
+        print('Does not have all required traits: ', action["required_traits"])
+        return False
+    return True
+
 def pick_action(character):
+
+    character_traits = character.traits
+    print(character_traits)
+
+    with open('actions.json') as actions:
+        json_actions = json.load(actions)
+        random.shuffle(json_actions)
+        i = 0
+        for action in json_actions:
+            print(i, action)
+            """ if is_valid_action(action, character_traits):
+                print(action) """
+
     return
 
 
@@ -64,9 +94,12 @@ def determine_character_actions(characters, time):
     for character in characters:
         if (character.get_time_since_action() > 5) and (random.randint(1, 100) > 80):
             print(create_current_time_for_printing(character, time), character.name)
+            pick_action(character)
             character.reset_time_since_action()
         else:
             character.increment_time_since_action()
+
+
 
 def run_application():
     time = 0
@@ -78,7 +111,7 @@ def run_application():
     while time >= 0:
         
         determine_character_actions(characters, time)
-        print(create_current_time_for_printing(characters[time], time), characters[time].print_characteristics())
+        """ print(create_current_time_for_printing(characters[time], time), characters[time].print_characteristics()) """
         time = advance_time(time)
 
 

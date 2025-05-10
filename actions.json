@@ -1,0 +1,50 @@
+[
+    {
+        "message": "{name} stumbled into bed.",
+        "required_traits": ["clumsy"],
+        "excluded_traits": [],
+        "time_range": [1200, 1440]
+    },
+    {
+        "message": "{name} ate breakfast like a champion.",
+        "required_traits": [],
+        "excluded_traits": [],
+        "time_range": [300, 600]
+    },
+    {
+        "message": "{name} tried hard to finish their homework.",
+        "required_traits": [],
+        "excluded_traits": ["lazy"],
+        "time_range": [600, 1200]
+    },
+    {
+        "message": "{name} did absolutely nothing productive.",
+        "required_traits": ["lazy"],
+        "excluded_traits": [],
+        "time_range": [0, 1440]
+    },
+    {
+        "message": "{name} tripped over absolutely nothing and kept walking like it didn’t happen.",
+        "required_traits": ["clumsy"],
+        "excluded_traits": [],
+        "time_range": [0, 1440]
+    },
+    {
+        "message": "{name} spilled coffee all over themselves but pretended it was fine.",
+        "required_traits": ["clumsy"],
+        "excluded_traits": [],
+        "time_range": [480, 1020]
+    },
+    {
+        "message": "{name} stared at the ceiling, unbothered by the chaos around them.",
+        "required_traits": ["nonchalant"],
+        "excluded_traits": [],
+        "time_range": [0, 1440]
+    },
+    {
+        "message": "{name} responded to a serious situation with a shrug.",
+        "required_traits": ["nonchalant"],
+        "excluded_traits": [],
+        "time_range": [600, 1200]
+    }
+]
