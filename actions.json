@@ -7,7 +7,8 @@
             "time_range": [
                 600,
                 1200
-            ]
+            ],
+            "timeout": 5
         },
         {
             "message": "{name} sighed dramatically and checked their phone again.",
@@ -16,7 +17,8 @@
             "time_range": [
                 480,
                 1020
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} drank water and immediately forgot they did.",
@@ -25,7 +27,8 @@
             "time_range": [
                 300,
                 1440
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} charged into the situation without thinking twice.",
@@ -36,7 +39,8 @@
             "time_range": [
                 480,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} danced in place while waiting for the microwave.",
@@ -47,7 +51,8 @@
             "time_range": [
                 660,
                 1020
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} muttered 'oops' for the third time today.",
@@ -58,7 +63,8 @@
             "time_range": [
                 0,
                 1440
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} ignored the drama like it was background noise.",
@@ -69,7 +75,8 @@
             "time_range": [
                 300,
                 1080
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} laid in bed staring at the wall instead of doing tasks.",
@@ -80,7 +87,8 @@
             "time_range": [
                 720,
                 1320
-            ]
+            ],
+            "timeout": 30
         },
         {
             "message": "{name} fearlessly knocked over a chair while rushing in to help.",
@@ -92,7 +100,8 @@
             "time_range": [
                 600,
                 1080
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} got distracted mid-task and started six other things.",
@@ -104,7 +113,8 @@
             "time_range": [
                 480,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} handled a chaotic emergency like it was a spa day.",
@@ -116,7 +126,8 @@
             "time_range": [
                 600,
                 1140
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} tripped, shrugged it off, and kept dancing.",
@@ -128,7 +139,8 @@
             "time_range": [
                 300,
                 1200
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} stood proudly in their pajamas at 3pm.",
@@ -140,7 +152,8 @@
             "time_range": [
                 780,
                 900
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} watched the coffee brew like it was a dramatic TV show.",
@@ -149,7 +162,8 @@
             "time_range": [
                 360,
                 600
-            ]
+            ],
+            "timeout": 5
         },
         {
             "message": "{name} scrolled aimlessly until they forgot why they picked up their phone.",
@@ -158,7 +172,8 @@
             "time_range": [
                 480,
                 1020
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} opened their to-do list, then immediately closed it again.",
@@ -167,7 +182,8 @@
             "time_range": [
                 600,
                 1140
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} stood in the shower pretending to be in a music video.",
@@ -176,7 +192,8 @@
             "time_range": [
                 300,
                 660
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} walked into a room and forgot why they were there.",
@@ -185,7 +202,8 @@
             "time_range": [
                 480,
                 1080
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} took a deep breath and ran headfirst into the awkward conversation.",
@@ -196,7 +214,8 @@
             "time_range": [
                 600,
                 1200
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} tapped their foot like the ground owed them money.",
@@ -207,7 +226,8 @@
             "time_range": [
                 480,
                 1080
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} knocked over a water glass while reaching for their phone.",
@@ -218,7 +238,8 @@
             "time_range": [
                 720,
                 1320
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} looked at the burning toast and calmly flipped it anyway.",
@@ -229,7 +250,8 @@
             "time_range": [
                 360,
                 660
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} considered starting a task and instead took a nap.",
@@ -240,7 +262,8 @@
             "time_range": [
                 660,
                 900
-            ]
+            ],
+            "timeout": 30
         },
         {
             "message": "{name} sprinted across the kitchen, slipped, and called it 'parkour'.",
@@ -252,7 +275,8 @@
             "time_range": [
                 480,
                 1020
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} forgot the plan but was too chill to care and kept going.",
@@ -264,7 +288,8 @@
             "time_range": [
                 780,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} boldly stood up, announced they were being productive, then sat back down.",
@@ -276,7 +301,8 @@
             "time_range": [
                 720,
                 960
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} tripped over the vacuum cord mid-cleaning frenzy and just kept going.",
@@ -288,7 +314,8 @@
             "time_range": [
                 540,
                 900
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} shrugged off a near-disaster and made a snack like nothing happened.",
@@ -300,7 +327,8 @@
             "time_range": [
                 600,
                 1200
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} was ready to fight for justice—until they remembered they were still in pajamas.",
@@ -312,7 +340,8 @@
             "time_range": [
                 780,
                 1020
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} charged into the room full of energy, then forgot why.",
@@ -324,7 +353,8 @@
             "time_range": [
                 600,
                 1080
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} calmly scrolled their phone while chaos unfolded around them.",
@@ -336,7 +366,8 @@
             "time_range": [
                 480,
                 1140
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} heroically ran into the room, slipped on nothing, then chilled like it was part of the plan.",
@@ -349,7 +380,8 @@
             "time_range": [
                 540,
                 1020
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} started five projects at once and finished none of them—proudly.",
@@ -362,7 +394,8 @@
             "time_range": [
                 600,
                 1140
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} rushed across the room to help, tripped, then casually leaned against a wall like nothing happened.",
@@ -375,7 +408,8 @@
             "time_range": [
                 660,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} ran in circles cleaning, got distracted, then gave up and napped on the floor.",
@@ -388,7 +422,8 @@
             "time_range": [
                 540,
                 960
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} stood still in the middle of chaos, nodded solemnly, and declared it a vibe.",
@@ -401,7 +436,8 @@
             "time_range": [
                 480,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} launched into action, knocked something over, then shrugged and walked away whistling.",
@@ -414,7 +450,8 @@
             "time_range": [
                 660,
                 1200
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} bounced off the walls with energy, then laid dramatically on the couch for no reason.",
@@ -427,7 +464,8 @@
             "time_range": [
                 720,
                 1080
-            ]
+            ],
+            "timeout": 20
         },
         {
             "message": "{name} stared at a broken lamp they knocked over and said 'it builds character' before leaving the room.",
@@ -439,7 +477,8 @@
             "time_range": [
                 780,
                 1140
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} burst through the door ready to help, forgot why, then played it cool and offered snacks.",
@@ -452,7 +491,8 @@
             "time_range": [
                 600,
                 1020
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} confidently began a workout, tripped over a shoe, and decided they'd earned a rest day.",
@@ -465,7 +505,8 @@
             "time_range": [
                 720,
                 960
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} started organizing their closet, got distracted dancing, then fell asleep mid-fold.",
@@ -478,7 +519,8 @@
             "time_range": [
                 600,
                 1080
-            ]
+            ],
+            "timeout": 25
         },
         {
             "message": "{name} fearlessly confronted the fire alarm going off—by calmly putting in earbuds.",
@@ -490,7 +532,8 @@
             "time_range": [
                 300,
                 1080
-            ]
+            ],
+            "timeout": 30
         },
         {
             "message": "{name} knocked over a stack of papers and whispered 'it was already messy' before walking off.",
@@ -502,7 +545,8 @@
             "time_range": [
                 480,
                 960
-            ]
+            ],
+            "timeout": 10
         },
         {
             "message": "{name} ran through the house looking for their keys—while holding them.",
@@ -514,7 +558,8 @@
             "time_range": [
                 360,
                 720
-            ]
+            ],
+            "timeout": 15
         },
         {
             "message": "{name} boldly climbed on the counter to reach a mug, then just chilled up there.",
@@ -526,7 +571,8 @@
             "time_range": [
                 300,
                 660
-            ]
+            ],
+            "timeout": 15
         }
     ]
 }

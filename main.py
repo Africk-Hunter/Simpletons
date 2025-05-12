@@ -14,23 +14,13 @@ def advance_time(current_time):
 
 class Character:
 
-    def __init__(self, name, traits, time_since_last_action): # Constructor (initializer)
+    def __init__(self, name, traits, action_timeout): # Constructor (initializer)
         self.name = name
         self.traits = traits
-        self.time_since_last_action = time_since_last_action
-        
-    def print_characteristics(self):
-        return [self.name, self.traits]
-    
-    def get_time_since_action(self):
-        return self.time_since_last_action
+        self.action_timeout = action_timeout
 
-    def reset_time_since_action(self):
-        
-        self.time_since_last_action = 0
-    def increment_time_since_action(self):
-        self.time_since_last_action += 1
-    
+    def decrement_action_timeout(self):
+        self.action_timeout -= 1
 
 def create_random_character():
     names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave']
@@ -39,7 +29,7 @@ def create_random_character():
     random.shuffle(traits)
     chosen_traits = traits[0: random.randint(1, 3)]
 
-    character = Character(random.choice(names), chosen_traits, 0)
+    character = Character(random.choice(names), chosen_traits, 3)
     print("Character Traits For " + character.name + ": " + str(character.traits))
     return character
 
@@ -63,7 +53,7 @@ def create_current_time_for_printing(character, time):
     return statement
 
 
-def is_valid_action(action, traits):
+def is_valid_action(action, traits, time):
 
     if any(trait in action["excluded_traits"] for trait in traits):
         """ print('Has one of excluded traits: ', action["excluded_traits"]) """
@@ -73,7 +63,13 @@ def is_valid_action(action, traits):
         return False
     return True
 
-def pick_action(character):
+def pick_location(character, time):
+    current_location = character.location
+
+    location_list = ["Room", "Downtown", "Street", "Park", "Building", "Office", "Mall", "Restaurant", "City", "Neighborhood"]
+
+
+def pick_action(character, time):
     character_traits = character.traits
 
     ## I should add a timeout value to every action, that timeout is what will be used as the characters new timeout. This makes it so certain actions take longer to do
@@ -84,18 +80,21 @@ def pick_action(character):
         
         print("\033[93mTrying For:\033[0m", character.name, "\033[93m(they are:\033[0m", character.traits, "\033[93m)\033[0m")
         for action in json_actions["actions"]:
-            if is_valid_action(action, character_traits):
+            if is_valid_action(action, character_traits, time):
                 print("\033[92mMessage:\033[0m", action["message"].format(name=character.name))
+                character.action_timeout = int(action["timeout"])
                 break
 
 def determine_character_actions(characters, time):
     for character in characters:
-        if (character.get_time_since_action() > 5) and (random.randint(1, 100) > 80):
+        if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
             create_current_time_for_printing(character, time)
-            pick_action(character)
-            character.reset_time_since_action()
+            pick_action(character, time)
+            """ character.reset_time_since_action() """
         else:
-            character.increment_time_since_action()
+            if character.action_timeout != 0:
+                print(character.name, "action timeout: ", character.action_timeout)
+                character.decrement_action_timeout()
 
 
 
@@ -103,7 +102,7 @@ def run_application():
     time = 0
     characters = []
     
-    for i in range(5):
+    for i in range(2):
         create_character(characters)
     
     while time >= 0:
