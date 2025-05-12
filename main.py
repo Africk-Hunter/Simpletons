@@ -3,13 +3,12 @@ import time
 import json
 
 def advance_time(current_time):
-    
     if current_time == 1440:
         current_time = 0
     else:
         current_time += 1
         
-    time.sleep(1)
+    time.sleep(.25)
     return current_time
 
 class Character:
@@ -39,18 +38,25 @@ def create_character(characters): ## Add handling for random or custom created c
     characters.append(create_random_character())
     return
 
+def stringify_minutes(minutes):
+    if minutes < 10:
+        minute_string = '0' + str(minutes)
+        return minute_string
+    else:
+        minute_string = str(minutes)
+        return minute_string
 
-
-def create_current_time_for_printing(character, time):
+def create_current_time_for_printing(character, time, message):
     if time < 60:
         hour = 12
         minutes = int(time)
     else: 
         hour = int(time / 60)
-        minutes = int((time - (time * hour)))
+        minutes = int((time - (60 * hour)))
     
-    statement = "[" + str(hour) + ":" + str(minutes) + "] " + character.name
-    return statement
+    statement = "[" + str(hour) + ":" + stringify_minutes(minutes) + "] " + message
+    print(statement)
+    return
 
 
 def is_valid_action(action, traits, time):
@@ -69,6 +75,8 @@ def pick_location(character, time):
     location_list = ["Room", "Downtown", "Street", "Park", "Building", "Office", "Mall", "Restaurant", "City", "Neighborhood"]
 
 
+
+
 def pick_action(character, time):
     character_traits = character.traits
 
@@ -78,22 +86,23 @@ def pick_action(character, time):
         json_actions = json.load(actions)
         random.shuffle(json_actions["actions"])
         
-        print("\033[93mTrying For:\033[0m", character.name, "\033[93m(they are:\033[0m", character.traits, "\033[93m)\033[0m")
+        """ print("\033[93mTrying For:\033[0m", character.name, "\033[93m(they are:\033[0m", character.traits, "\033[93m)\033[0m") """
         for action in json_actions["actions"]:
             if is_valid_action(action, character_traits, time):
-                print("\033[92mMessage:\033[0m", action["message"].format(name=character.name))
+                """ print("\033[92mMessage:\033[0m", action["message"].format(name=character.name)) """
+                create_current_time_for_printing(character, time, action["message"].format(name=character.name))
                 character.action_timeout = int(action["timeout"])
                 break
 
 def determine_character_actions(characters, time):
     for character in characters:
         if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
-            create_current_time_for_printing(character, time)
+            """ create_current_time_for_printing(character, time) """
             pick_action(character, time)
             """ character.reset_time_since_action() """
         else:
             if character.action_timeout != 0:
-                print(character.name, "action timeout: ", character.action_timeout)
+                """ print(character.name, "action timeout: ", character.action_timeout) """
                 character.decrement_action_timeout()
 
 
