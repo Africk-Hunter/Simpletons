@@ -39,8 +39,8 @@ def create_random_character():
     random.shuffle(traits)
     chosen_traits = traits[0: random.randint(1, 3)]
 
-    character = Character(random.choice(names), random.choice(chosen_traits), 0)
-    print("Character Traits For " + character.name + ": " + character.traits)
+    character = Character(random.choice(names), chosen_traits, 0)
+    print("Character Traits For " + character.name + ": " + str(character.traits))
     return character
 
 
@@ -59,41 +59,39 @@ def create_current_time_for_printing(character, time):
         hour = int(time / 60)
         minutes = int((time - (time * hour)))
     
-    statement = "[" + str(hour) + ":" + str(minutes) + "]"
+    statement = "[" + str(hour) + ":" + str(minutes) + "] " + character.name
     return statement
 
 
 def is_valid_action(action, traits):
-    print(action)
+
     if any(trait in action["excluded_traits"] for trait in traits):
-        print('Has one of excluded traits: ', action["excluded_traits"])
+        """ print('Has one of excluded traits: ', action["excluded_traits"]) """
         return False
-    if not any(trait in action["required_traits"] for trait in traits):
-        print('Does not have all required traits: ', action["required_traits"])
+    if not all(trait in traits for trait in action["required_traits"]) and action["required_traits"] != []:
+        """ print('Does not have all required traits: ', action["required_traits"]) """
         return False
     return True
 
 def pick_action(character):
-
     character_traits = character.traits
-    print(character_traits)
 
+    ## I should add a timeout value to every action, that timeout is what will be used as the characters new timeout. This makes it so certain actions take longer to do
+    ## I think this would make it more 'realistic'. If someone were to brew coffee, a 30 minute timer before the next action would be reasonable. If they slept, a 30 minute timer would be too little
     with open('actions.json') as actions:
         json_actions = json.load(actions)
-        random.shuffle(json_actions)
-        i = 0
-        for action in json_actions:
-            print(i, action)
-            """ if is_valid_action(action, character_traits):
-                print(action) """
-
-    return
-
+        random.shuffle(json_actions["actions"])
+        
+        print("\033[93mTrying For:\033[0m", character.name, "\033[93m(they are:\033[0m", character.traits, "\033[93m)\033[0m")
+        for action in json_actions["actions"]:
+            if is_valid_action(action, character_traits):
+                print("\033[92mMessage:\033[0m", action["message"].format(name=character.name))
+                break
 
 def determine_character_actions(characters, time):
     for character in characters:
         if (character.get_time_since_action() > 5) and (random.randint(1, 100) > 80):
-            print(create_current_time_for_printing(character, time), character.name)
+            create_current_time_for_printing(character, time)
             pick_action(character)
             character.reset_time_since_action()
         else:
