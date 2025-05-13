@@ -1,0 +1,364 @@
+{
+  "transitions": [
+    {
+      "message": "{name} stepped out of the Room and started heading to the Downtown.",
+      "leaving_location": "Room",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "{name} left the Room and headed toward the Street.",
+      "leaving_location": "Room",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} exited the Room, planning to check out the Park next.",
+      "leaving_location": "Room",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "Done with the Room, {name} turned and walked toward the Office.",
+      "leaving_location": "Room",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} glanced around the Room one last time before walking toward the Mall.",
+      "leaving_location": "Room",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "After some thought, {name} left the Room and made their way to the Restaurant.",
+      "leaving_location": "Room",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "Done with the Room, {name} turned and walked toward the City.",
+      "leaving_location": "Room",
+      "arriving_location": "City"
+    },
+    {
+      "message": "{name} glanced around the Room one last time before walking toward the Neighborhood.",
+      "leaving_location": "Room",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} exited the Downtown, planning to check out the Room next.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} left the Downtown and headed toward the Street.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} glanced around the Downtown one last time before walking toward the Park.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} stepped out of the Downtown and started heading to the Office.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} stepped out of the Downtown and started heading to the Mall.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "{name} stepped out of the Downtown and started heading to the Restaurant.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "{name} left the Downtown and headed toward the City.",
+      "leaving_location": "Downtown",
+      "arriving_location": "City"
+    },
+    {
+      "message": "Done with the Downtown, {name} turned and walked toward the Neighborhood.",
+      "leaving_location": "Downtown",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} glanced around the Street one last time before walking toward the Room.",
+      "leaving_location": "Street",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} left the Street and headed toward the Downtown.",
+      "leaving_location": "Street",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "{name} exited the Street, planning to check out the Park next.",
+      "leaving_location": "Street",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} decided it was time to leave the Street and make their way to the Office.",
+      "leaving_location": "Street",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "Done with the Street, {name} turned and walked toward the Mall.",
+      "leaving_location": "Street",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "{name} stepped out of the Street and started heading to the Restaurant.",
+      "leaving_location": "Street",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "Done with the Street, {name} turned and walked toward the City.",
+      "leaving_location": "Street",
+      "arriving_location": "City"
+    },
+    {
+      "message": "{name} decided it was time to leave the Street and make their way to the Neighborhood.",
+      "leaving_location": "Street",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} stepped out of the Park and started heading to the Room.",
+      "leaving_location": "Park",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} exited the Park, planning to check out the Downtown next.",
+      "leaving_location": "Park",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "Done with the Park, {name} turned and walked toward the Street.",
+      "leaving_location": "Park",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} exited the Park, planning to check out the Office next.",
+      "leaving_location": "Park",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} left the Park and headed toward the Mall.",
+      "leaving_location": "Park",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "After some thought, {name} left the Park and made their way to the Restaurant.",
+      "leaving_location": "Park",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "{name} stepped out of the Park and started heading to the City.",
+      "leaving_location": "Park",
+      "arriving_location": "City"
+    },
+    {
+      "message": "{name} stepped out of the Park and started heading to the Neighborhood.",
+      "leaving_location": "Park",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} decided it was time to leave the Office and make their way to the Room.",
+      "leaving_location": "Office",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} decided it was time to leave the Office and make their way to the Downtown.",
+      "leaving_location": "Office",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "{name} stepped out of the Office and started heading to the Street.",
+      "leaving_location": "Office",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} left the Office and headed toward the Park.",
+      "leaving_location": "Office",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} exited the Office, planning to check out the Mall next.",
+      "leaving_location": "Office",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "{name} exited the Office, planning to check out the Restaurant next.",
+      "leaving_location": "Office",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "{name} exited the Office, planning to check out the City next.",
+      "leaving_location": "Office",
+      "arriving_location": "City"
+    },
+    {
+      "message": "{name} stepped out of the Office and started heading to the Neighborhood.",
+      "leaving_location": "Office",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} decided it was time to leave the Mall and make their way to their room.",
+      "leaving_location": "Mall",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} glanced around the Mall one last time before walking toward the Downtown.",
+      "leaving_location": "Mall",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "Done with the Mall, {name} turned and walked toward the Street.",
+      "leaving_location": "Mall",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} glanced around the Mall one last time before walking toward the Park.",
+      "leaving_location": "Mall",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} stepped out of the Mall and started heading to the Office.",
+      "leaving_location": "Mall",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "After some thought, {name} left the Mall and made their way to the Restaurant.",
+      "leaving_location": "Mall",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "{name} stepped out of the Mall and started heading to the City.",
+      "leaving_location": "Mall",
+      "arriving_location": "City"
+    },
+    {
+      "message": "{name} stepped out of the Mall and started heading to the Neighborhood.",
+      "leaving_location": "Mall",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} left the Restaurant and headed toward the Room.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} left the Restaurant and headed toward the Downtown.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "Done with the Restaurant, {name} turned and walked toward the Street.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} glanced around the Restaurant one last time before walking toward the Park.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} glanced around the Restaurant one last time before walking toward the Office.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} exited the Restaurant, planning to check out the Mall next.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "{name} left the Restaurant and headed toward the City.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "City"
+    },
+    {
+      "message": "Done with the Restaurant, {name} turned and walked toward the Neighborhood.",
+      "leaving_location": "Restaurant",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} glanced around the City one last time before walking toward the Room.",
+      "leaving_location": "City",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "Done with the City, {name} turned and walked toward the Downtown.",
+      "leaving_location": "City",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "{name} stepped out of the City and started heading to the Street.",
+      "leaving_location": "City",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} glanced around the City one last time before walking toward the Park.",
+      "leaving_location": "City",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} glanced around the City one last time before walking toward the Office.",
+      "leaving_location": "City",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} left the City and headed toward the Mall.",
+      "leaving_location": "City",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "{name} exited the City, planning to check out the Restaurant next.",
+      "leaving_location": "City",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "{name} left the City and headed toward the Neighborhood.",
+      "leaving_location": "City",
+      "arriving_location": "Neighborhood"
+    },
+    {
+      "message": "{name} stepped out of the Neighborhood and started heading to the Room.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Room"
+    },
+    {
+      "message": "{name} decided it was time to leave the Neighborhood and make their way to the Downtown.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Downtown"
+    },
+    {
+      "message": "{name} left the Neighborhood and headed toward the Street.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Street"
+    },
+    {
+      "message": "{name} stepped out of the Neighborhood and started heading to the Park.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Park"
+    },
+    {
+      "message": "{name} stepped out of the Neighborhood and started heading to the Office.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Office"
+    },
+    {
+      "message": "{name} exited the Neighborhood, planning to check out the Mall next.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Mall"
+    },
+    {
+      "message": "After some thought, {name} left the Neighborhood and made their way to the Restaurant.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "Restaurant"
+    },
+    {
+      "message": "After some thought, {name} left the Neighborhood and made their way to the City.",
+      "leaving_location": "Neighborhood",
+      "arriving_location": "City"
+    }
+  ]
+}

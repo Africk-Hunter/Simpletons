@@ -1,37 +1,40 @@
 {
     "actions": [
         {
-            "message": "{name} stared into the fridge for five minutes, then walked away.",
+            "message": "{name} opened the fridge, grabbed a slice of bread, and ate it plain.",
             "required_traits": [],
             "excluded_traits": [],
             "time_range": [
                 600,
                 1200
             ],
-            "timeout": 5
+            "timeout": 60,
+            "location": "Room"
         },
         {
-            "message": "{name} sighed dramatically and checked their phone again.",
+            "message": "{name} checked their phone, typed something, then set it down and rubbed their eyes.",
             "required_traits": [],
             "excluded_traits": [],
             "time_range": [
                 480,
                 1020
             ],
-            "timeout": 10
+            "timeout": 70,
+            "location": "Room"
         },
         {
-            "message": "{name} drank water and immediately forgot they did.",
+            "message": "{name} filled a glass of water and sipped it while leaning on the counter.",
             "required_traits": [],
             "excluded_traits": [],
             "time_range": [
                 300,
                 1440
             ],
-            "timeout": 10
+            "timeout": 60,
+            "location": "Kitchen"
         },
         {
-            "message": "{name} charged into the situation without thinking twice.",
+            "message": "{name} ran toward the commotion and tried to move a fallen shelf out of the way.",
             "required_traits": [
                 "courageous"
             ],
@@ -40,10 +43,11 @@
                 480,
                 1080
             ],
-            "timeout": 20
+            "timeout": 120,
+            "location": "Building"
         },
         {
-            "message": "{name} danced in place while waiting for the microwave.",
+            "message": "{name} bounced in place while heating leftovers, then drummed their fingers on the counter.",
             "required_traits": [
                 "hyper"
             ],
@@ -52,10 +56,11 @@
                 660,
                 1020
             ],
-            "timeout": 15
+            "timeout": 90,
+            "location": "Kitchen"
         },
         {
-            "message": "{name} muttered 'oops' for the third time today.",
+            "message": "{name} knocked over a cup while reaching for something behind it, then wiped up the spill.",
             "required_traits": [
                 "clumsy"
             ],
@@ -64,10 +69,11 @@
                 0,
                 1440
             ],
-            "timeout": 10
+            "timeout": 90,
+            "location": "Kitchen"
         },
         {
-            "message": "{name} ignored the drama like it was background noise.",
+            "message": "{name} glanced at the argument, then turned up the music and continued folding laundry.",
             "required_traits": [
                 "nonchalant"
             ],
@@ -76,10 +82,11 @@
                 300,
                 1080
             ],
-            "timeout": 15
+            "timeout": 100,
+            "location": "Room"
         },
         {
-            "message": "{name} laid in bed staring at the wall instead of doing tasks.",
+            "message": "{name} sat on their bed scrolling for a while before closing their eyes without sleeping.",
             "required_traits": [
                 "lazy"
             ],
@@ -88,10 +95,11 @@
                 720,
                 1320
             ],
-            "timeout": 30
+            "timeout": 150,
+            "location": "Room"
         },
         {
-            "message": "{name} fearlessly knocked over a chair while rushing in to help.",
+            "message": "{name} rushed to lift a heavy box off someone, nearly tripping in the process.",
             "required_traits": [
                 "courageous",
                 "clumsy"
@@ -101,10 +109,11 @@
                 600,
                 1080
             ],
-            "timeout": 15
+            "timeout": 130,
+            "location": "Street"
         },
         {
-            "message": "{name} got distracted mid-task and started six other things.",
+            "message": "{name} started organizing their desk, got bored, and wandered off to sweep the kitchen instead.",
             "required_traits": [
                 "hyper",
                 "lazy"
@@ -114,10 +123,11 @@
                 480,
                 1080
             ],
-            "timeout": 20
+            "timeout": 110,
+            "location": "Office"
         },
         {
-            "message": "{name} handled a chaotic emergency like it was a spa day.",
+            "message": "{name} calmly applied a bandage while others panicked around them.",
             "required_traits": [
                 "courageous",
                 "nonchalant"
@@ -127,364 +137,1247 @@
                 600,
                 1140
             ],
-            "timeout": 25
+            "timeout": 120,
+            "location": "Restaurant"
         },
         {
-            "message": "{name} tripped, shrugged it off, and kept dancing.",
-            "required_traits": [
-                "clumsy",
-                "nonchalant"
-            ],
-            "excluded_traits": [],
-            "time_range": [
-                300,
-                1200
-            ],
-            "timeout": 15
-        },
-        {
-            "message": "{name} stood proudly in their pajamas at 3pm.",
-            "required_traits": [
-                "lazy",
-                "courageous"
-            ],
-            "excluded_traits": [],
-            "time_range": [
-                780,
-                900
-            ],
-            "timeout": 20
-        },
-        {
-            "message": "{name} watched the coffee brew like it was a dramatic TV show.",
-            "required_traits": [],
-            "excluded_traits": [],
-            "time_range": [
-                360,
-                600
-            ],
-            "timeout": 5
-        },
-        {
-            "message": "{name} scrolled aimlessly until they forgot why they picked up their phone.",
+            "message": "{name} tried on a new outfit in the fitting room, admiring their reflection in the mirror.",
             "required_traits": [],
             "excluded_traits": [],
             "time_range": [
                 480,
                 1020
             ],
-            "timeout": 10
+            "timeout": 80,
+            "location": "Mall"
         },
         {
-            "message": "{name} opened their to-do list, then immediately closed it again.",
-            "required_traits": [],
-            "excluded_traits": [],
-            "time_range": [
-                600,
-                1140
-            ],
-            "timeout": 10
-        },
-        {
-            "message": "{name} stood in the shower pretending to be in a music video.",
+            "message": "{name} chatted with a friend while walking down the street, enjoying the sunshine.",
             "required_traits": [],
             "excluded_traits": [],
             "time_range": [
                 300,
-                660
+                1080
             ],
-            "timeout": 15
+            "timeout": 110,
+            "location": "Street"
         },
         {
-            "message": "{name} walked into a room and forgot why they were there.",
+            "message": "{name} bought a cup of coffee at the café, then took a slow walk through the park to enjoy it.",
             "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Park"
+        },
+        {
+            "message": "{name} double-checked the stove, then again, muttering under their breath.",
+            "required_traits": [
+                "obsessive"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                360,
+                1320
+            ],
+            "timeout": 90,
+            "location": "Room"
+        },
+        {
+            "message": "{name} bumped into the counter while dancing to music in their headphones.",
+            "required_traits": [
+                "clumsy"
+            ],
             "excluded_traits": [],
             "time_range": [
                 480,
                 1080
             ],
-            "timeout": 10
+            "timeout": 70,
+            "location": "Room"
         },
         {
-            "message": "{name} took a deep breath and ran headfirst into the awkward conversation.",
+            "message": "{name} zoned out staring at people walking past the shop window.",
             "required_traits": [
+                "distracted"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1260
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} helped an elderly person carry a bag up the stairs without being asked.",
+            "required_traits": [
+                "friendly",
                 "courageous"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 120,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} kicked a rock all the way down the sidewalk without losing focus.",
+            "required_traits": [
+                "methodical"
+            ],
+            "excluded_traits": [
+                "distracted"
+            ],
+            "time_range": [
+                720,
+                1140
+            ],
+            "timeout": 80,
+            "location": "Street"
+        },
+        {
+            "message": "{name} checked under the park bench three times before sitting down.",
+            "required_traits": [
+                "paranoid"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1020
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} frowned at the menu, sighed, and walked out without ordering.",
+            "required_traits": [
+                "moody"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Restaurant"
+        },
+        {
+            "message": "{name} arranged every item on their desk at a perfect right angle.",
+            "required_traits": [
+                "neat"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                360,
+                1320
+            ],
+            "timeout": 70,
+            "location": "Office"
+        },
+        {
+            "message": "{name} politely asked a stranger for directions, then thanked them twice.",
+            "required_traits": [
+                "shy",
+                "friendly"
             ],
             "excluded_traits": [],
             "time_range": [
                 600,
                 1200
             ],
-            "timeout": 20
+            "timeout": 90,
+            "location": "City"
         },
         {
-            "message": "{name} tapped their foot like the ground owed them money.",
+            "message": "{name} gave a sharp one-word answer and stared at their phone.",
             "required_traits": [
-                "hyper"
+                "blunt",
+                "aloof"
+            ],
+            "excluded_traits": [
+                "friendly"
+            ],
+            "time_range": [
+                480,
+                1020
+            ],
+            "timeout": 100,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} walked straight through the puddle without reacting.",
+            "required_traits": [
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                300,
+                1380
+            ],
+            "timeout": 70,
+            "location": "Street"
+        },
+        {
+            "message": "{name} scratched their arm, looked around, and backed away from the crowd.",
+            "required_traits": [
+                "anxious"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} tilted their head, studying the plant like it was suspicious.",
+            "required_traits": [
+                "paranoid"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1320
+            ],
+            "timeout": 100,
+            "location": "Room"
+        },
+        {
+            "message": "{name} took a deep breath, then continued sweeping without saying a word.",
+            "required_traits": [
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1260
+            ],
+            "timeout": 80,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} tapped their foot and shifted side to side while in line.",
+            "required_traits": [
+                "fidgety"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1020
+            ],
+            "timeout": 70,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} was mid-sentence when they completely forgot what they were saying.",
+            "required_traits": [
+                "forgetful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                360,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Office"
+        },
+        {
+            "message": "{name} straightened every chair at the café before sitting down.",
+            "required_traits": [
+                "neat",
+                "obsessive"
             ],
             "excluded_traits": [],
             "time_range": [
                 480,
                 1080
             ],
-            "timeout": 15
+            "timeout": 110,
+            "location": "Restaurant"
         },
         {
-            "message": "{name} knocked over a water glass while reaching for their phone.",
+            "message": "{name} offered to help, then dropped the stack of papers everywhere.",
             "required_traits": [
+                "friendly",
                 "clumsy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1020
+            ],
+            "timeout": 120,
+            "location": "Office"
+        },
+        {
+            "message": "{name} kept walking despite everyone else stopping to look at the sky.",
+            "required_traits": [
+                "distracted",
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1320
+            ],
+            "timeout": 100,
+            "location": "City"
+        },
+        {
+            "message": "{name} pushed a leaf off the bench before sitting and crossing their arms.",
+            "required_traits": [
+                "irritable"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1260
+            ],
+            "timeout": 80,
+            "location": "Park"
+        },
+        {
+            "message": "{name} stepped in gum, sighed loudly, and scraped their shoe on the curb.",
+            "required_traits": [
+                "irritable"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1140
+            ],
+            "timeout": 90,
+            "location": "Street"
+        },
+        {
+            "message": "{name} watched birds hop around the plaza while sipping coffee.",
+            "required_traits": [
+                "easygoing"
+            ],
+            "excluded_traits": [
+                "anxious"
+            ],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} hesitated at the restaurant entrance, then backed away and left.",
+            "required_traits": [
+                "shy",
+                "anxious"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1020
+            ],
+            "timeout": 100,
+            "location": "Restaurant"
+        },
+        {
+            "message": "{name} sorted every spice jar alphabetically before cooking.",
+            "required_traits": [
+                "methodical",
+                "neat"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1140
+            ],
+            "timeout": 110,
+            "location": "Room"
+        },
+        {
+            "message": "{name} excitedly joined a group of kids chasing pigeons.",
+            "required_traits": [
+                "hyper",
+                "friendly"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                720,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Park"
+        },
+        {
+            "message": "{name} wiped down the desk twice, then sat silently.",
+            "required_traits": [
+                "obsessive",
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Office"
+        },
+        {
+            "message": "{name} stared at the mall map for five minutes and still got lost.",
+            "required_traits": [
+                "distracted",
+                "forgetful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1260
+            ],
+            "timeout": 100,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} insisted they knew the way, then led everyone into a dead end.",
+            "required_traits": [
+                "stubborn"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1020
+            ],
+            "timeout": 120,
+            "location": "City"
+        },
+        {
+            "message": "{name} stood frozen at the crosswalk even after the light changed.",
+            "required_traits": [
+                "anxious"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Street"
+        },
+        {
+            "message": "{name} waved at someone, realized it was the wrong person, and pretended to stretch.",
+            "required_traits": [
+                "clumsy",
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1200
+            ],
+            "timeout": 100,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} challenged someone loudly about cutting in line.",
+            "required_traits": [
+                "blunt",
+                "courageous"
+            ],
+            "excluded_traits": [
+                "shy"
+            ],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 120,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} pulled out a notebook and started organizing a color-coded to-do list.",
+            "required_traits": [
+                "methodical",
+                "diligent"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                420,
+                1020
+            ],
+            "timeout": 110,
+            "location": "Office"
+        },
+        {
+            "message": "{name} stepped outside, frowned at the wind, and went right back in.",
+            "required_traits": [
+                "moody"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                360,
+                1260
+            ],
+            "timeout": 70,
+            "location": "Room"
+        },
+        {
+            "message": "{name} took five deep breaths before walking into the crowd.",
+            "required_traits": [
+                "anxious",
+                "resourceful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} got distracted mid-sentence and never finished their thought.",
+            "required_traits": [
+                "distracted"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1320
+            ],
+            "timeout": 80,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} stood in the store aisle comparing prices for ten minutes.",
+            "required_traits": [
+                "methodical",
+                "diligent"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1020
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} tripped on their own shoelaces and laughed it off.",
+            "required_traits": [
+                "clumsy",
+                "easygoing"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} greeted everyone in the office with a big smile and a wave.",
+            "required_traits": [
+                "friendly"
+            ],
+            "excluded_traits": [
+                "aloof"
+            ],
+            "time_range": [
+                480,
+                1020
+            ],
+            "timeout": 80,
+            "location": "Office"
+        },
+        {
+            "message": "{name} knocked over a can at the corner store and apologized four times.",
+            "required_traits": [
+                "clumsy",
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1200
+            ],
+            "timeout": 100,
+            "location": "City"
+        },
+        {
+            "message": "{name} scowled at the broken vending machine and kicked it once.",
+            "required_traits": [
+                "irritable"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} paced around the room, muttering under their breath about someone following them.",
+            "required_traits": [
+                "paranoid"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Room"
+        },
+        {
+            "message": "{name} stopped mid-walk, eyes darting, convinced they left the stove on.",
+            "required_traits": [
+                "anxious",
+                "obsessive"
             ],
             "excluded_traits": [],
             "time_range": [
                 720,
                 1320
             ],
-            "timeout": 10
+            "timeout": 100,
+            "location": "Street"
         },
         {
-            "message": "{name} looked at the burning toast and calmly flipped it anyway.",
+            "message": "{name} greeted the restaurant staff by name, smiling and asking about their day.",
             "required_traits": [
-                "nonchalant"
+                "friendly"
             ],
-            "excluded_traits": [],
-            "time_range": [
-                360,
-                660
+            "excluded_traits": [
+                "aloof"
             ],
-            "timeout": 15
-        },
-        {
-            "message": "{name} considered starting a task and instead took a nap.",
-            "required_traits": [
-                "lazy"
-            ],
-            "excluded_traits": [],
             "time_range": [
                 660,
-                900
+                1200
             ],
-            "timeout": 30
+            "timeout": 90,
+            "location": "Restaurant"
         },
         {
-            "message": "{name} sprinted across the kitchen, slipped, and called it 'parkour'.",
+            "message": "{name} tapped their fingers on the desk while waiting for the program to load.",
             "required_traits": [
-                "hyper",
-                "clumsy"
+                "fidgety"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1020
+            ],
+            "timeout": 60,
+            "location": "Office"
+        },
+        {
+            "message": "{name} inspected every aisle with precision, making a list on their phone.",
+            "required_traits": [
+                "methodical",
+                "neat"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} forgot why they walked into the room and stood confused for a while.",
+            "required_traits": [
+                "forgetful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Room"
+        },
+        {
+            "message": "{name} spun in circles trying to find the right store, grumbling as they went.",
+            "required_traits": [
+                "moody"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} sat silently on a park bench, unfazed by the chaos of kids nearby.",
+            "required_traits": [
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                720,
+                1080
+            ],
+            "timeout": 120,
+            "location": "Park"
+        },
+        {
+            "message": "{name} wandered into the park and immediately began organizing scattered benches.",
+            "required_traits": [
+                "neat"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} stomped away from the counter when they got the wrong order again.",
+            "required_traits": [
+                "irritable",
+                "blunt"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                720,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Restaurant"
+        },
+        {
+            "message": "{name} lingered at the edge of the crowd, unsure whether to join the group.",
+            "required_traits": [
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} carefully rewrote their to-do list three times, making sure it was perfect.",
+            "required_traits": [
+                "obsessive",
+                "diligent"
             ],
             "excluded_traits": [],
             "time_range": [
                 480,
                 1020
             ],
-            "timeout": 15
+            "timeout": 100,
+            "location": "Room"
         },
         {
-            "message": "{name} forgot the plan but was too chill to care and kept going.",
+            "message": "{name} impulsively bought a hat from a kiosk with no real reason.",
             "required_traits": [
-                "nonchalant",
-                "lazy"
+                "impulsive"
             ],
             "excluded_traits": [],
             "time_range": [
-                780,
-                1080
+                660,
+                1260
             ],
-            "timeout": 20
+            "timeout": 80,
+            "location": "Mall"
         },
         {
-            "message": "{name} boldly stood up, announced they were being productive, then sat back down.",
+            "message": "{name} helped a stranger carry groceries up the stairs with no hesitation.",
             "required_traits": [
-                "lazy",
-                "courageous"
+                "resourceful",
+                "friendly"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1080
+            ],
+            "timeout": 110,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} ignored the honking and kept strolling, humming to themselves.",
+            "required_traits": [
+                "easygoing"
+            ],
+            "excluded_traits": [
+                "anxious"
+            ],
+            "time_range": [
+                480,
+                1020
+            ],
+            "timeout": 80,
+            "location": "Street"
+        },
+        {
+            "message": "{name} stormed out of the office, muttering about 'idiots' under their breath.",
+            "required_traits": [
+                "moody",
+                "blunt"
             ],
             "excluded_traits": [],
             "time_range": [
                 720,
-                960
+                1080
             ],
-            "timeout": 25
+            "timeout": 90,
+            "location": "Office"
         },
         {
-            "message": "{name} tripped over the vacuum cord mid-cleaning frenzy and just kept going.",
+            "message": "{name} paused to admire the skyline before continuing their jog.",
             "required_traits": [
-                "clumsy",
-                "hyper"
+                "observant"
             ],
             "excluded_traits": [],
             "time_range": [
                 540,
                 900
             ],
-            "timeout": 15
+            "timeout": 70,
+            "location": "City"
         },
         {
-            "message": "{name} shrugged off a near-disaster and made a snack like nothing happened.",
+            "message": "{name} tripped on a curb while texting and quickly checked if anyone saw.",
             "required_traits": [
-                "nonchalant",
-                "clumsy"
+                "clumsy",
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Street"
+        },
+        {
+            "message": "{name} rushed to organize a team huddle after hearing about a delay.",
+            "required_traits": [
+                "diligent",
+                "resourceful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Office"
+        },
+        {
+            "message": "{name} stared into the fridge for minutes, completely forgetting what they came for.",
+            "required_traits": [
+                "distracted"
             ],
             "excluded_traits": [],
             "time_range": [
                 600,
                 1200
             ],
-            "timeout": 10
+            "timeout": 90,
+            "location": "Room"
         },
         {
-            "message": "{name} was ready to fight for justice—until they remembered they were still in pajamas.",
+            "message": "{name} cautiously peeked into the alley, then changed their route entirely.",
             "required_traits": [
-                "courageous",
-                "lazy"
+                "paranoid",
+                "anxious"
             ],
-            "excluded_traits": [],
-            "time_range": [
-                780,
-                1020
-            ],
-            "timeout": 20
-        },
-        {
-            "message": "{name} charged into the room full of energy, then forgot why.",
-            "required_traits": [
-                "hyper",
+            "excluded_traits": [
                 "courageous"
             ],
-            "excluded_traits": [],
-            "time_range": [
-                600,
-                1080
-            ],
-            "timeout": 15
-        },
-        {
-            "message": "{name} calmly scrolled their phone while chaos unfolded around them.",
-            "required_traits": [
-                "nonchalant",
-                "hyper"
-            ],
-            "excluded_traits": [],
             "time_range": [
                 480,
                 1140
             ],
-            "timeout": 20
+            "timeout": 100,
+            "location": "City"
         },
         {
-            "message": "{name} heroically ran into the room, slipped on nothing, then chilled like it was part of the plan.",
+            "message": "{name} grumbled at the self-checkout and flagged someone down instead of figuring it out.",
             "required_traits": [
-                "courageous",
-                "clumsy",
-                "nonchalant"
-            ],
-            "excluded_traits": [],
-            "time_range": [
-                540,
-                1020
-            ],
-            "timeout": 25
-        },
-        {
-            "message": "{name} started five projects at once and finished none of them—proudly.",
-            "required_traits": [
-                "hyper",
                 "lazy",
-                "courageous"
+                "irritable"
             ],
-            "excluded_traits": [],
-            "time_range": [
-                600,
-                1140
+            "excluded_traits": [
+                "resourceful"
             ],
-            "timeout": 20
-        },
-        {
-            "message": "{name} rushed across the room to help, tripped, then casually leaned against a wall like nothing happened.",
-            "required_traits": [
-                "clumsy",
-                "courageous",
-                "nonchalant"
-            ],
-            "excluded_traits": [],
             "time_range": [
                 660,
-                1080
+                1200
             ],
-            "timeout": 20
+            "timeout": 80,
+            "location": "Mall"
         },
         {
-            "message": "{name} ran in circles cleaning, got distracted, then gave up and napped on the floor.",
+            "message": "{name} leaned against the wall, chewing gum and staring into space.",
             "required_traits": [
-                "hyper",
-                "lazy",
-                "clumsy"
+                "aloof"
             ],
             "excluded_traits": [],
             "time_range": [
                 540,
-                960
+                1020
             ],
-            "timeout": 25
+            "timeout": 90,
+            "location": "Downtown"
         },
         {
-            "message": "{name} stood still in the middle of chaos, nodded solemnly, and declared it a vibe.",
+            "message": "{name} arranged their bookshelf by color, then immediately rearranged it by author.",
             "required_traits": [
-                "nonchalant",
-                "lazy",
-                "courageous"
+                "neat",
+                "obsessive"
             ],
             "excluded_traits": [],
             "time_range": [
                 480,
-                1080
+                960
             ],
-            "timeout": 20
+            "timeout": 110,
+            "location": "Room"
         },
         {
-            "message": "{name} launched into action, knocked something over, then shrugged and walked away whistling.",
+            "message": "{name} dashed across the street before the light changed, laughing the whole way.",
             "required_traits": [
-                "clumsy",
-                "courageous",
-                "nonchalant"
+                "impulsive",
+                "hyper"
+            ],
+            "excluded_traits": [
+                "anxious"
+            ],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Street"
+        },
+        {
+            "message": "{name} paused to help a kid who dropped their ice cream.",
+            "required_traits": [
+                "friendly",
+                "resourceful"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                720,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} cleaned the restaurant table thoroughly before sitting down.",
+            "required_traits": [
+                "neat"
             ],
             "excluded_traits": [],
             "time_range": [
                 660,
                 1200
             ],
-            "timeout": 15
+            "timeout": 70,
+            "location": "Restaurant"
         },
         {
-            "message": "{name} bounced off the walls with energy, then laid dramatically on the couch for no reason.",
+            "message": "{name} closed their office door to work alone, tired of people talking.",
             "required_traits": [
-                "hyper",
-                "lazy",
-                "nonchalant"
+                "moody",
+                "distracted"
             ],
-            "excluded_traits": [],
+            "excluded_traits": [
+                "friendly"
+            ],
             "time_range": [
-                720,
+                600,
                 1080
             ],
-            "timeout": 20
+            "timeout": 100,
+            "location": "Office"
         },
         {
-            "message": "{name} stared at a broken lamp they knocked over and said 'it builds character' before leaving the room.",
+            "message": "{name} asked every store clerk for help, even for obvious things.",
             "required_traits": [
-                "clumsy",
-                "nonchalant"
+                "distracted",
+                "anxious"
+            ],
+            "excluded_traits": [
+                "resourceful"
+            ],
+            "time_range": [
+                600,
+                1140
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} stubbornly insisted on taking the long route through the city despite suggestions.",
+            "required_traits": [
+                "stubborn"
             ],
             "excluded_traits": [],
             "time_range": [
-                780,
-                1140
+                660,
+                1080
             ],
-            "timeout": 10
+            "timeout": 80,
+            "location": "City"
         },
         {
-            "message": "{name} burst through the door ready to help, forgot why, then played it cool and offered snacks.",
+            "message": "{name} noticed someone drop a receipt and handed it back without saying a word.",
             "required_traits": [
-                "courageous",
-                "hyper",
+                "observant",
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 70,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} watched a heated argument and took quiet mental notes on everyone’s tone.",
+            "required_traits": [
+                "observant",
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} opened a park trash can and rearranged some poorly thrown recyclables.",
+            "required_traits": [
+                "neat",
+                "obsessive"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} cleaned their keyboard with a toothbrush and rubbing alcohol.",
+            "required_traits": [
+                "neat",
+                "methodical"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                960
+            ],
+            "timeout": 100,
+            "location": "Room"
+        },
+        {
+            "message": "{name} stayed behind after the meeting to retype the notes just for clarity.",
+            "required_traits": [
+                "diligent",
+                "obsessive"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Office"
+        },
+        {
+            "message": "{name} startled when someone coughed behind them and glanced over their shoulder.",
+            "required_traits": [
+                "paranoid"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Restaurant"
+        },
+        {
+            "message": "{name} nervously rehearsed their drink order in their head while waiting in line.",
+            "required_traits": [
+                "anxious",
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Restaurant"
+        },
+        {
+            "message": "{name} broke a pen in frustration and threw it in the trash.",
+            "required_traits": [
+                "irritable",
+                "impulsive"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1020
+            ],
+            "timeout": 80,
+            "location": "Office"
+        },
+        {
+            "message": "{name} browsed every rack but left the store without buying anything.",
+            "required_traits": [
+                "indecisive",
+                "distracted"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} interrupted a conversation to say what everyone else was thinking.",
+            "required_traits": [
+                "blunt",
+                "observant"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1140
+            ],
+            "timeout": 80,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} fiddled with a broken button on their shirt and muttered under their breath.",
+            "required_traits": [
+                "fidgety"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1020
+            ],
+            "timeout": 90,
+            "location": "Room"
+        },
+        {
+            "message": "{name} anxiously checked the time every few minutes while waiting for someone.",
+            "required_traits": [
+                "anxious"
+            ],
+            "excluded_traits": [
+                "nonchalant"
+            ],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Downtown"
+        },
+        {
+            "message": "{name} tried a new recipe but ended up accidentally burning dinner.",
+            "required_traits": [
+                "clumsy",
+                "impulsive"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1200
+            ],
+            "timeout": 100,
+            "location": "Room"
+        },
+        {
+            "message": "{name} sat quietly, observing the people around them without saying a word.",
+            "required_traits": [
+                "shy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Park"
+        },
+        {
+            "message": "{name} shouted for help after spotting a car blocking the fire lane.",
+            "required_traits": [
+                "courageous"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "City"
+        },
+        {
+            "message": "{name} hurriedly walked through the mall, avoiding eye contact with everyone.",
+            "required_traits": [
+                "shy",
+                "anxious"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} made sure to neatly fold every towel in the stack before taking a break.",
+            "required_traits": [
+                "neat",
+                "methodical"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1140
+            ],
+            "timeout": 100,
+            "location": "Room"
+        },
+        {
+            "message": "{name} casually watched the birds outside the office window, ignoring the meeting around them.",
+            "required_traits": [
                 "nonchalant"
             ],
             "excluded_traits": [],
@@ -492,87 +1385,185 @@
                 600,
                 1020
             ],
-            "timeout": 15
+            "timeout": 80,
+            "location": "Office"
         },
         {
-            "message": "{name} confidently began a workout, tripped over a shoe, and decided they'd earned a rest day.",
+            "message": "{name} approached the counter at the cafe and asked for a recommendation.",
             "required_traits": [
-                "courageous",
-                "clumsy",
-                "lazy"
+                "friendly"
             ],
-            "excluded_traits": [],
+            "excluded_traits": [
+                "shy"
+            ],
             "time_range": [
-                720,
-                960
+                600,
+                1080
             ],
-            "timeout": 25
+            "timeout": 90,
+            "location": "Restaurant"
         },
         {
-            "message": "{name} started organizing their closet, got distracted dancing, then fell asleep mid-fold.",
+            "message": "{name} paced back and forth in front of the park entrance, unsure whether to enter.",
+            "required_traits": [
+                "anxious"
+            ],
+            "excluded_traits": [
+                "impulsive"
+            ],
+            "time_range": [
+                660,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Park"
+        },
+        {
+            "message": "{name} tapped their fingers rhythmically on the table, clearly waiting for something.",
             "required_traits": [
                 "hyper",
-                "lazy",
-                "clumsy"
+                "fidgety"
             ],
             "excluded_traits": [],
             "time_range": [
                 600,
                 1080
             ],
-            "timeout": 25
+            "timeout": 80,
+            "location": "Office"
         },
         {
-            "message": "{name} fearlessly confronted the fire alarm going off—by calmly putting in earbuds.",
+            "message": "{name} lazily slid across the floor in their socks, avoiding chores.",
             "required_traits": [
-                "courageous",
-                "nonchalant"
+                "lazy"
             ],
             "excluded_traits": [],
             "time_range": [
-                300,
+                660,
                 1080
             ],
-            "timeout": 30
+            "timeout": 90,
+            "location": "Room"
         },
         {
-            "message": "{name} knocked over a stack of papers and whispered 'it was already messy' before walking off.",
+            "message": "{name} looked at the sky, lost in thought, ignoring the busy city street around them.",
             "required_traits": [
-                "clumsy",
+                "stoic"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 100,
+            "location": "City"
+        },
+        {
+            "message": "{name} flinched at the loud noise and quickly covered their ears.",
+            "required_traits": [
+                "paranoid"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Street"
+        },
+        {
+            "message": "{name} tried to catch up with an old friend, but their words tumbled out in a jumbled mess.",
+            "required_traits": [
+                "shy",
+                "fidgety"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Neighborhood"
+        },
+        {
+            "message": "{name} overheard a conversation and immediately started gossiping with a friend.",
+            "required_traits": [
+                "blunt",
+                "friendly"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1140
+            ],
+            "timeout": 90,
+            "location": "Mall"
+        },
+        {
+            "message": "{name} took a deep breath and focused, then made a perfect basket in the park's basketball hoop.",
+            "required_traits": [
+                "diligent",
+                "methodical"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 80,
+            "location": "Park"
+        },
+        {
+            "message": "{name} lazily flipped through a magazine, absentmindedly chewing on a pencil.",
+            "required_traits": [
+                "lazy"
+            ],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1080
+            ],
+            "timeout": 100,
+            "location": "Room"
+        },
+        {
+            "message": "{name} stood at the corner of the street, watching traffic pass with little interest.",
+            "required_traits": [
                 "nonchalant"
             ],
             "excluded_traits": [],
             "time_range": [
-                480,
-                960
+                600,
+                1080
             ],
-            "timeout": 10
+            "timeout": 90,
+            "location": "Street"
         },
         {
-            "message": "{name} ran through the house looking for their keys—while holding them.",
+            "message": "{name} quickly moved aside to let someone pass, then immediately resumed their task.",
             "required_traits": [
-                "clumsy",
-                "hyper"
+                "resourceful"
             ],
             "excluded_traits": [],
             "time_range": [
-                360,
-                720
+                600,
+                1080
             ],
-            "timeout": 15
+            "timeout": 90,
+            "location": "Downtown"
         },
         {
-            "message": "{name} boldly climbed on the counter to reach a mug, then just chilled up there.",
+            "message": "{name} threw a fit over a broken pencil, then stormed off to their room.",
             "required_traits": [
-                "courageous",
-                "nonchalant"
+                "irritable"
             ],
             "excluded_traits": [],
             "time_range": [
-                300,
-                660
+                600,
+                1080
             ],
-            "timeout": 15
+            "timeout": 100,
+            "location": "Office"
         }
     ]
 }

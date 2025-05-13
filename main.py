@@ -13,22 +13,30 @@ def advance_time(current_time):
 
 class Character:
 
-    def __init__(self, name, traits, action_timeout): # Constructor (initializer)
+    def __init__(self, name, traits, action_timeout, location): # Constructor (initializer)
         self.name = name
         self.traits = traits
         self.action_timeout = action_timeout
+        self.location = location
+        print(location)
 
     def decrement_action_timeout(self):
         self.action_timeout -= 1
 
 def create_random_character():
     names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave']
-    traits = ['clumsy', 'courageous', 'lazy', 'nonchalant', 'hyper' ]
+    traits = [
+        'clumsy', 'courageous', 'lazy', 'nonchalant', 'hyper',
+        'easygoing', 'moody', 'paranoid', 'anxious', 'stoic',
+        'irritable', 'methodical', 'impulsive', 'fidgety', 'obsessive',
+        'distracted', 'friendly', 'aloof', 'observant', 'blunt',
+        'shy', 'resourceful', 'neat', 'forgetful', 'stubborn', 'diligent'
+    ]
 
     random.shuffle(traits)
     chosen_traits = traits[0: random.randint(1, 3)]
 
-    character = Character(random.choice(names), chosen_traits, 3)
+    character = Character(random.choice(names), chosen_traits, 3, pick_random_location())
     print("Character Traits For " + character.name + ": " + str(character.traits))
     return character
 
@@ -46,7 +54,7 @@ def stringify_minutes(minutes):
         minute_string = str(minutes)
         return minute_string
 
-def create_current_time_for_printing(character, time, message):
+def create_current_time_for_printing(time, message):
     if time < 60:
         hour = 12
         minutes = int(time)
@@ -59,26 +67,45 @@ def create_current_time_for_printing(character, time, message):
     return
 
 
-def is_valid_action(action, traits, time):
+def is_valid_action(action, traits, time, location):
 
     if any(trait in action["excluded_traits"] for trait in traits):
-        """ print('Has one of excluded traits: ', action["excluded_traits"]) """
+        return False
+    if location != action['location']:
         return False
     if not all(trait in traits for trait in action["required_traits"]) and action["required_traits"] != []:
-        """ print('Does not have all required traits: ', action["required_traits"]) """
         return False
     return True
 
-def pick_location(character, time):
+def pick_random_location():
+    location_list = ["Room", "Downtown", "Street", "Park", "Office", "Mall", "Restaurant", "City", "Neighborhood"]
+    random.shuffle(location_list)
+    return location_list[0]
+
+def change_location(character, time):
     current_location = character.location
 
     location_list = ["Room", "Downtown", "Street", "Park", "Building", "Office", "Mall", "Restaurant", "City", "Neighborhood"]
 
+    random.shuffle(location_list)
 
+    for location in location_list:
+        if location != current_location:
+            current_location = location
+            break
 
+    with open('location_transitions.json') as json_transitions:
+            transitions = json.load(json_transitions)
+            
+            for transition in transitions["transitions"]:
+                if character.location == transition["leaving_location"] and current_location == transition["arriving_location"]:
+                    create_current_time_for_printing(time, transition["message"].format(name=character.name))
+                    break
+
+    character.location = current_location
 
 def pick_action(character, time):
-    character_traits = character.traits
+    """ character_traits = character.traits """
 
     ## I should add a timeout value to every action, that timeout is what will be used as the characters new timeout. This makes it so certain actions take longer to do
     ## I think this would make it more 'realistic'. If someone were to brew coffee, a 30 minute timer before the next action would be reasonable. If they slept, a 30 minute timer would be too little
@@ -86,25 +113,23 @@ def pick_action(character, time):
         json_actions = json.load(actions)
         random.shuffle(json_actions["actions"])
         
-        """ print("\033[93mTrying For:\033[0m", character.name, "\033[93m(they are:\033[0m", character.traits, "\033[93m)\033[0m") """
         for action in json_actions["actions"]:
-            if is_valid_action(action, character_traits, time):
-                """ print("\033[92mMessage:\033[0m", action["message"].format(name=character.name)) """
-                create_current_time_for_printing(character, time, action["message"].format(name=character.name))
+            if is_valid_action(action, character.traits, time, character.location):
+                create_current_time_for_printing(time, action["message"].format(name=character.name))
                 character.action_timeout = int(action["timeout"])
                 break
 
 def determine_character_actions(characters, time):
     for character in characters:
         if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
-            """ create_current_time_for_printing(character, time) """
-            pick_action(character, time)
-            """ character.reset_time_since_action() """
+            if random.randint(1, 100) > 90:
+                change_location(character, time)
+            else:
+                pick_action(character, time)
+
         else:
             if character.action_timeout != 0:
-                """ print(character.name, "action timeout: ", character.action_timeout) """
                 character.decrement_action_timeout()
-
 
 
 def run_application():
@@ -117,7 +142,6 @@ def run_application():
     while time >= 0:
         
         determine_character_actions(characters, time)
-        """ print(create_current_time_for_printing(characters[time], time), characters[time].print_characteristics()) """
         time = advance_time(time)
 
 
