@@ -2,7 +2,7 @@ import random, json
 
 class LocationManager:
     
-    def __init__(self, transitions_file='location_transitions.json'):
+    def __init__(self, transitions_file='./data/location_transitions.json'):
         with open(transitions_file) as f:
             self.transitions = json.load(f)["transitions"]
             
@@ -22,13 +22,13 @@ class LocationManager:
             if location != current_location:
                 current_location = location
                 break
-
-        with open('location_transitions.json') as json_transitions:
-                transitions = json.load(json_transitions)
-                
-                for transition in transitions["transitions"]:
-                    if character.location == transition["leaving_location"] and current_location == transition["arriving_location"]:
-                        time_manager.create_current_time_for_printing(transition["message"].format(name=character.name))
-                        break
+        
+        for transition in self.transitions:
+            if character.location == transition["leaving_location"] and current_location == transition["arriving_location"]:
+                time_manager.create_current_time_for_printing(transition["message"].format(name=character.name))
+                break
 
         character.location = current_location
+        
+    def go_to(self, character, location):
+        character.location = location

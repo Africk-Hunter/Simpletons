@@ -35,7 +35,7 @@ class GameManager:
                 if random.randint(1, 100) > 90:
                     self.LM.change_location(character, self.TM)
                 else:
-                    self.AM.pick_action(character, self.TM)
+                    self.AM.pick_action(character, self.TM, self.LM)
 
             else:
                 if character.action_timeout != 0:
