@@ -1,0 +1,264 @@
+{
+    "actions": [
+        {
+            "id": 100,
+            "message": "{name} left their room, rubbed their eyes, and decided it was finally time to go home and sleep",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Room",
+            "restore_value": 100
+        },
+        {
+            "id": 101,
+            "message": "{name} stood up from their desk in the room, stretched, and dragged themselves home to sleep",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Room",
+            "restore_value": 100
+        },
+        {
+            "id": 102,
+            "message": "{name} took one last look around downtown, then started the long walk home to crash in bed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1300,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Downtown",
+            "restore_value": 100
+        },
+        {
+            "id": 103,
+            "message": "{name} left the bustle of downtown behind, headed home, and was asleep within minutes",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Downtown",
+            "restore_value": 100
+        },
+        {
+            "id": 104,
+            "message": "{name} wandered off the street, turned toward home, and collapsed into sleep as soon as they got inside",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1260,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Street",
+            "restore_value": 100
+        },
+        {
+            "id": 105,
+            "message": "{name} stepped off the curb and yawned. Home was calling, and so was their bed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1260,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Street",
+            "restore_value": 100
+        },
+        {
+            "id": 106,
+            "message": "{name} brushed the leaves off their lap at the park and headed home, exhausted and ready to pass out",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Park",
+            "restore_value": 100
+        },
+        {
+            "id": 107,
+            "message": "{name} left the park slowly, feet dragging, and went home to sleep the moment they walked in the door",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Park",
+            "restore_value": 100
+        },
+        {
+            "id": 108,
+            "message": "{name} slipped out of the building quietly, took the elevator down, and went straight home to sleep",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Building",
+            "restore_value": 100
+        },
+        {
+            "id": 109,
+            "message": "{name} locked up the building behind them and strolled home, exhausted, barely making it to bed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Building",
+            "restore_value": 100
+        },
+        {
+            "id": 110,
+            "message": "{name} shut down their workstation at the office and headed home for some much-needed rest",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1260,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Office",
+            "restore_value": 100
+        },
+        {
+            "id": 111,
+            "message": "{name} finished their shift at the office and headed home, eyes already half-closed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1260,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Office",
+            "restore_value": 100
+        },
+        {
+            "id": 112,
+            "message": "{name} left the mall with sore feet, dragging themselves home and falling asleep in seconds",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Mall",
+            "restore_value": 100
+        },
+        {
+            "id": 113,
+            "message": "{name} pushed through the mall doors into the night air and headed straight home to bed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Mall",
+            "restore_value": 100
+        },
+        {
+            "id": 114,
+            "message": "{name} finished their meal at the restaurant, tipped, and went straight home to sleep it off",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Restaurant",
+            "restore_value": 100
+        },
+        {
+            "id": 115,
+            "message": "{name} left the restaurant with a full belly and sleepy eyes, heading home to crash",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Restaurant",
+            "restore_value": 100
+        },
+        {
+            "id": 116,
+            "message": "{name} wrapped up their walk through the city and made their way back home to sleep",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "City",
+            "restore_value": 100
+        },
+        {
+            "id": 117,
+            "message": "{name} checked their watch in the city square and decided it was definitely time to get home and crash",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "City",
+            "restore_value": 100
+        },
+        {
+            "id": 118,
+            "message": "{name} left the quiet neighborhood street and made their way back home to sleep",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1320,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Neighborhood",
+            "restore_value": 100
+        },
+        {
+            "id": 119,
+            "message": "{name} finished chatting with a neighbor and headed home for bed before they could pass out on the porch",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1290,
+                1440
+            ],
+            "timeout": 480,
+            "location": "Neighborhood",
+            "restore_value": 100
+        }
+    ]
+}

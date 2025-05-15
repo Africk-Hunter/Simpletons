@@ -11,7 +11,7 @@ class TimeManager:
         else:
             self.current_time += 1
             
-        time.sleep(.05)
+        time.sleep(.25)
         return self.current_time
     
     def stringify_minutes(self, minutes):

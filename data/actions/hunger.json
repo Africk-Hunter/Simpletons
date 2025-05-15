@@ -1,0 +1,254 @@
+{
+  "actions": [
+    {
+      "id": 6,
+      "message": "{name} opened the fridge and pulled out some {food} to eat {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [420, 540],
+      "timeout": 30,
+      "location": "Room",
+      "restore_value": 15
+    },
+    {
+      "id": 7,
+      "message": "{name} prepared a quick {food} snack and sat down to eat {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [480, 600],
+      "timeout": 35,
+      "location": "Kitchen",
+      "restore_value": 20
+    },
+    {
+      "id": 8,
+      "message": "{name} grabbed some {food} and ate outside on the porch {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 20,
+      "location": "Porch",
+      "restore_value": 15
+    },
+    {
+      "id": 9,
+      "message": "{name} quietly munched on {food} near the window {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [450, 570],
+      "timeout": 25,
+      "location": "Room",
+      "restore_value": 10
+    },
+    {
+      "id": 10,
+      "message": "{name} microwaved some {food} and leaned against the counter while eating {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [540, 660],
+      "timeout": 30,
+      "location": "Kitchen",
+      "restore_value": 20
+    },
+    {
+      "id": 11,
+      "message": "{name} sat on their bed eating some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [420, 540],
+      "timeout": 20,
+      "location": "Room",
+      "restore_value": 10
+    },
+    {
+      "id": 12,
+      "message": "{name} rummaged through a drawer and pulled out some emergency {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 15,
+      "location": "Room",
+      "restore_value": 5
+    },
+    {
+      "id": 13,
+      "message": "{name} bought some {food} from a nearby food truck downtown {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [660, 780],
+      "timeout": 25,
+      "location": "Downtown",
+      "restore_value": 25
+    },
+    {
+      "id": 14,
+      "message": "{name} sat on a bench downtown snacking on some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [720, 840],
+      "timeout": 20,
+      "location": "Downtown",
+      "restore_value": 20
+    },
+    {
+      "id": 15,
+      "message": "{name} tore open a snack-sized {food} while walking down the street {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [480, 600],
+      "timeout": 15,
+      "location": "Street",
+      "restore_value": 10
+    },
+    {
+      "id": 16,
+      "message": "{name} leaned against a wall on the street and quickly ate some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 15,
+      "location": "Street",
+      "restore_value": 10
+    },
+    {
+      "id": 17,
+      "message": "{name} laid out a small snack blanket and munched on some {food} in the park {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [540, 660],
+      "timeout": 25,
+      "location": "Park",
+      "restore_value": 20
+    },
+    {
+      "id": 18,
+      "message": "{name} wandered through the park eating {food} from a crumpled paper bag {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 20,
+      "location": "Park",
+      "restore_value": 15
+    },
+    {
+      "id": 19,
+      "message": "{name} found an empty stairwell in the building and snacked on some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [480, 600],
+      "timeout": 15,
+      "location": "Building",
+      "restore_value": 10
+    },
+    {
+      "id": 20,
+      "message": "{name} sat in the building's lobby and quietly ate some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [540, 660],
+      "timeout": 20,
+      "location": "Building",
+      "restore_value": 15
+    },
+    {
+      "id": 21,
+      "message": "{name} nibbled on {food} while pretending to work in the office {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [480, 600],
+      "timeout": 20,
+      "location": "Office",
+      "restore_value": 10
+    },
+    {
+      "id": 22,
+      "message": "{name} took a break and scarfed down some {food} in the break room {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 15,
+      "location": "Office",
+      "restore_value": 15
+    },
+    {
+      "id": 23,
+      "message": "{name} found a food stall at the mall and got some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [660, 780],
+      "timeout": 25,
+      "location": "Mall",
+      "restore_value": 25
+    },
+    {
+      "id": 24,
+      "message": "{name} sat in the food court, eating {food} over a plastic tray {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [720, 840],
+      "timeout": 20,
+      "location": "Mall",
+      "restore_value": 25
+    },
+    {
+      "id": 25,
+      "message": "{name} ordered {food} from the restaurant's lunch menu {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [720, 840],
+      "timeout": 40,
+      "location": "Restaurant",
+      "restore_value": 35
+    },
+    {
+      "id": 26,
+      "message": "{name} sat at the bar in the restaurant, quietly enjoying some {food} {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [780, 900],
+      "timeout": 30,
+      "location": "Restaurant",
+      "restore_value": 30
+    },
+    {
+      "id": 27,
+      "message": "{name} walked through the city while eating some {food} on the go {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [660, 780],
+      "timeout": 15,
+      "location": "City",
+      "restore_value": 10
+    },
+    {
+      "id": 28,
+      "message": "{name} ducked into a quiet alley and ate some {food} in peace {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [720, 840],
+      "timeout": 20,
+      "location": "City",
+      "restore_value": 20
+    },
+    {
+      "id": 29,
+      "message": "{name} greeted a neighbor while eating {food} on their front porch {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [600, 720],
+      "timeout": 20,
+      "location": "Neighborhood",
+      "restore_value": 20
+    },
+    {
+      "id": 30,
+      "message": "{name} leaned against a fence in the neighborhood, eating {food} while watching the street {trait_message}",
+      "required_traits": [],
+      "excluded_traits": [],
+      "time_range": [660, 780],
+      "timeout": 20,
+      "location": "Neighborhood",
+      "restore_value": 20
+    }
+  ]
+}

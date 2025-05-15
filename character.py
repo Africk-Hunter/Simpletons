@@ -9,6 +9,27 @@ class Character:
         self.location = location
         self.done_actions = done_actions
         self.sleep_time = random.randint(1260, 1440)
+        self.needs = {
+            "hunger": {"value": 50, "decay_rate": 0.6, "priority_weight": 1.3, "max_value": 100},
+            "sleep": {"value": 100, "decay_rate": 0.6, "priority_weight": 2, "max_value": 100},
+            "social": {"value": 50, "decay_rate": 0.3, "priority_weight": 1, "max_value": 100},
+            
+        }
 
     def decrement_action_timeout(self):
         self.action_timeout -= 1
+        
+    def decay_needs(self):
+        for need, need_data in self.needs.items():
+            need_data["value"] -= need_data["decay_rate"]
+            
+    def update_based_on_action(self, timeout, change_type, change_amount):
+        self.action_timeout = timeout
+        
+        for need, need_data in self.needs.items():
+            if need == change_type:
+                if need_data["value"] + change_amount > 100:
+                    need_data["value"] = 100
+                else:
+                    need_data["value"] += change_amount
+            

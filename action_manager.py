@@ -1,13 +1,24 @@
-import json, random
+import json, random, os
+from context_manager import ContextManger
 
 class ActionManager:
-    def __init__(self, actions_file='./data/actions.json', sleep_file='./data/sleep.json'):
-        with open(actions_file) as f:
-            self.actions = json.load(f)["actions"]
-        with open(sleep_file) as f:
-            self.sleep_messages = json.load(f)["sleep_messages"]
+    def __init__(self, actions_dir='./data/actions'):
+        
+        self.actions = {}
+        self.CM = ContextManger()
+        
+        for filename in os.listdir(actions_dir):
+            filepath = os.path.join(actions_dir, filename)
+            category = os.path.splitext(filename)[0]
+            
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                self.actions[category] = data.get("actions", [])
+
+    def get_actions(self, category):
+        return self.actions.get(category, [])
     
-    def is_valid_action(self, character, action, time):
+    def is_valid_action(self, character, action):
         traits = character.traits
         location = character.location
         done_actions = character.done_actions
@@ -21,24 +32,34 @@ class ActionManager:
         if action["id"] in done_actions:
             return False
         return True
-    
-    def pick_sleep(self, character, location_manager):
-        location_manager.go_to(character, 'Room')
-        random.shuffle(self.sleep_messages)
-        print(self.sleep_messages[0]["message"].format(name=character.name))
-        character.action_timeout = (random.randint(420, 540) + (1440 - character.sleep_time))
-        pass
+                
+    def pick_action_from_provided_list(self, character, action_list):
+        random.shuffle(action_list)
         
+        for action in action_list:
+                if self.is_valid_action(character, action):
+                    return action
     
-    def pick_action(self, character, time_manager, location_manager):
-            random.shuffle(self.actions)
-            
-            if time_manager.current_time > character.sleep_time:
-                self.pick_sleep(character, location_manager)
-            
-            for action in self.actions:
-                if self.is_valid_action(character, action, time_manager.current_time):
-                    time_manager.create_current_time_for_printing(action["message"].format(name=character.name))
-                    character.action_timeout = int(action["timeout"])
-                    character.done_actions.append(action["id"])
-                    break
+    def determine_which_need_takes_priority(self, character):
+        
+        char_needs = character.needs
+        priority_need = {"need": '', "priority_value": -1}
+        
+        for need, need_data in char_needs.items():
+            score = (need_data["max_value"] - need_data["value"]) * need_data["priority_weight"]
+        
+            if score > priority_need["priority_value"]:
+                priority_need["need"] = need
+                priority_need["priority_value"] = score
+          
+        return priority_need["need"]
+    
+    def handle_action_picking(self, character, priority_need):
+        
+        action_list = self.get_actions(priority_need)
+        picked_action = self.pick_action_from_provided_list(character, action_list)
+        filled_action = self.CM.fill_action_context(character, picked_action)
+        character.update_based_on_action(picked_action["timeout"], priority_need, picked_action["restore_value"])
+        
+        return filled_action
+        

@@ -1,0 +1,238 @@
+{
+    "actions": [
+        {
+            "id": 120,
+            "message": "{name} left their room and joined a few people in the hallway for a late-night chat",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1080,
+                1380
+            ],
+            "timeout": 90,
+            "location": "Room",
+            "restore_value": 25
+        },
+        {
+            "id": 121,
+            "message": "{name} peeked out of their room and joined a group chatting nearby, needing some company",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1140,
+                1410
+            ],
+            "timeout": 90,
+            "location": "Room",
+            "restore_value": 20
+        },
+        {
+            "id": 122,
+            "message": "{name} caught up with a couple of friends hanging out downtown",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                900,
+                1350
+            ],
+            "timeout": 120,
+            "location": "Downtown",
+            "restore_value": 40
+        },
+        {
+            "id": 123,
+            "message": "{name} spotted someone they knew downtown and stopped to talk for a bit",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                960,
+                1380
+            ],
+            "timeout": 60,
+            "location": "Downtown",
+            "restore_value": 20
+        },
+        {
+            "id": 124,
+            "message": "{name} waved down a familiar face on the street and shared a laugh",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1020,
+                1350
+            ],
+            "timeout": 45,
+            "location": "Street",
+            "restore_value": 15
+        },
+        {
+            "id": 125,
+            "message": "{name} bumped into someone they knew on the street and caught up for a while",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1050,
+                1410
+            ],
+            "timeout": 60,
+            "location": "Street",
+            "restore_value": 20
+        },
+        {
+            "id": 126,
+            "message": "{name} noticed a group gathered at the park and joined them for some light conversation",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1080,
+                1350
+            ],
+            "timeout": 90,
+            "location": "Park",
+            "restore_value": 30
+        },
+        {
+            "id": 127,
+            "message": "{name} greeted some familiar faces at the park and stuck around to chat",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1140,
+                1410
+            ],
+            "timeout": 75,
+            "location": "Park",
+            "restore_value": 25
+        },
+        {
+            "id": 128,
+            "message": "{name} ran into a coworker while leaving the building and had a quick conversation",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1020,
+                1350
+            ],
+            "timeout": 30,
+            "location": "Building",
+            "restore_value": 10
+        },
+        {
+            "id": 129,
+            "message": "{name} lingered in the building lobby to chat with someone before heading out",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1050,
+                1410
+            ],
+            "timeout": 60,
+            "location": "Building",
+            "restore_value": 20
+        },
+        {
+            "id": 130,
+            "message": "{name} caught a break at the office and talked with a coworker for a while",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                960,
+                1320
+            ],
+            "timeout": 60,
+            "location": "Office",
+            "restore_value": 20
+        },
+        {
+            "id": 131,
+            "message": "{name} wandered over to the office break room and joined a small group chatting",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                990,
+                1350
+            ],
+            "timeout": 75,
+            "location": "Office",
+            "restore_value": 25
+        },
+        {
+            "id": 132,
+            "message": "{name} ran into an old friend at the mall and caught up over coffee",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1080,
+                1410
+            ],
+            "timeout": 120,
+            "location": "Mall",
+            "restore_value": 45
+        },
+        {
+            "id": 133,
+            "message": "{name} sat at a mall bench and struck up a conversation with a nearby shopper",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1110,
+                1410
+            ],
+            "timeout": 60,
+            "location": "Mall",
+            "restore_value": 20
+        },
+        {
+            "id": 134,
+            "message": "{name} stayed a little longer at the restaurant to talk with the group at the next table",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1080,
+                1350
+            ],
+            "timeout": 90,
+            "location": "Restaurant",
+            "restore_value": 30
+        },
+        {
+            "id": 135,
+            "message": "{name} chatted with a friendly waiter at the restaurant before finishing their meal",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1110,
+                1380
+            ],
+            "timeout": 45,
+            "location": "Restaurant",
+            "restore_value": 15
+        },
+        {
+            "id": 136,
+            "message": "{name} joined a street performer's small audience in the city and talked with a few strangers",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1080,
+                1410
+            ],
+            "timeout": 90,
+            "location": "City",
+            "restore_value": 30
+        },
+        {
+            "id": 137,
+            "message": "{name} ran into someone familiar in the city and caught up over a quick drink",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                1110,
+                1410
+            ],
+            "timeout": 60,
+            "location": "City",
+            "restore_value": 25
+        }
+    ]
+}
