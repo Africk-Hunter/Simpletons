@@ -10,9 +10,17 @@ class GameManager:
         self.AM = ActionManager()
         self.LM = LocationManager()
         self.characters = []
+        self.colors = [ 32, 33, 34, 35, 36, 37]
+        self.names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave']
+    
+    def select_from_and_update_array(self, array):
+        return_value = random.choice(array)
+        array.remove(return_value)
+        return return_value
 
     def create_random_character(self):
-        names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave']
+        
+        
         traits = ['clumsy']
         """ traits = [
             'clumsy', 'courageous', 'lazy', 'nonchalant', 'hyper',
@@ -24,8 +32,10 @@ class GameManager:
 
         random.shuffle(traits)
         chosen_traits = traits[0: random.randint(1, 3)]
+        name = self.select_from_and_update_array(self.names)
+        color = self.select_from_and_update_array(self.colors)
 
-        character = Character(random.choice(names), chosen_traits, 3, self.LM.pick_random_location(), [])
+        character = Character(name, chosen_traits, 3, self.LM.pick_random_location_from_list(), [], color)
         print("Character Traits For " + character.name + ": " + str(character.traits), "They are located at:", character.location)
         self.characters.append(character)
 
@@ -35,7 +45,7 @@ class GameManager:
                 
                 priority_need = self.AM.determine_which_need_takes_priority(character)
                 filled_action = self.AM.handle_action_picking(character, priority_need, self.TM)
-                self.TM.create_current_time_for_printing(filled_action)
+                self.TM.create_current_time_for_printing(filled_action, character)
 
             else:
                 if character.action_timeout != 0:

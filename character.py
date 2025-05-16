@@ -2,7 +2,7 @@ import random
 
 class Character:
 
-    def __init__(self, name, traits, action_timeout, location, done_actions): # Constructor (initializer)
+    def __init__(self, name, traits, action_timeout, location, done_actions, text_color): # Constructor (initializer)
         self.name = name
         self.traits = traits
         self.action_timeout = action_timeout
@@ -11,6 +11,7 @@ class Character:
         self.sleep_time = random.randint(1260, 1440)
         self.move_timeout = 0
         self.current_location_time = 0
+        self.text_color = text_color
         self.needs = {
             "hunger": {"value": 50, "decay_rate": 0.6, "priority_weight": 1.3, "max_value": 100},
             "sleep": {"value": 100, "decay_rate": 0.6, "priority_weight": 2, "max_value": 100},

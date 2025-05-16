@@ -22,7 +22,7 @@ class TimeManager:
             minute_string = str(minutes)
             return minute_string
         
-    def create_current_time_for_printing(self, message):
+    def create_current_time_for_printing(self, message, character):
         signifier = ' AM'
         minutes = 0
         if self.current_time < 60:
@@ -41,7 +41,7 @@ class TimeManager:
             minutes = int((self.current_time - (60 * hour)))
         
         statement = "[" + str(hour) + ":" + self.stringify_minutes(minutes) + signifier +  "]: " + message
-        print(statement, '\n')
+        print(f"\033[{character.text_color}m{statement}\033[0m", '\n')
         return
 
     

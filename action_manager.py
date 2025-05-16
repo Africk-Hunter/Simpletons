@@ -62,7 +62,7 @@ class ActionManager:
         
         random.shuffle(action_list)
         print(character.location)
-        self.LM.go_to(character, action_list[0])
+        self.LM.go_to_location(character, action_list[0])
         print(character.location)
         character.move_timeout = 60
         
@@ -71,7 +71,7 @@ class ActionManager:
     def handle_action_picking(self, character, priority_need, TM):
         
         if character.current_location_time > 120:
-            self.LM.change_location(character, TM)
+            self.LM.change_location_at_random(character, TM)
         
         action_list = self.get_actions(priority_need)
         picked_action = self.pick_action_from_provided_list(character, action_list)
