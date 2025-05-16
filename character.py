@@ -9,11 +9,14 @@ class Character:
         self.location = location
         self.done_actions = done_actions
         self.sleep_time = random.randint(1260, 1440)
+        self.move_timeout = 0
+        self.current_location_time = 0
         self.needs = {
             "hunger": {"value": 50, "decay_rate": 0.6, "priority_weight": 1.3, "max_value": 100},
             "sleep": {"value": 100, "decay_rate": 0.6, "priority_weight": 2, "max_value": 100},
             "social": {"value": 50, "decay_rate": 0.3, "priority_weight": 1, "max_value": 100},
-            
+            "thirst": {"value": 100, "decay_rate": 0.8, "priority_weight": 1.4, "max_value": 100},
+            "hygiene": {"value": 80, "decay_rate": 0.2, "priority_weight": 0.9, "max_value": 100}
         }
 
     def decrement_action_timeout(self):
@@ -33,3 +36,5 @@ class Character:
                 else:
                     need_data["value"] += change_amount
             
+    def increment_current_location_time(self):
+        self.current_location_time += 1

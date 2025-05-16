@@ -1,11 +1,13 @@
 import json, random, os
 from context_manager import ContextManger
+from location_manager import LocationManager
 
 class ActionManager:
     def __init__(self, actions_dir='./data/actions'):
         
         self.actions = {}
         self.CM = ContextManger()
+        self.LM = LocationManager()
         
         for filename in os.listdir(actions_dir):
             filepath = os.path.join(actions_dir, filename)
@@ -39,6 +41,8 @@ class ActionManager:
         for action in action_list:
                 if self.is_valid_action(character, action):
                     return action
+                
+        return None
     
     def determine_which_need_takes_priority(self, character):
         
@@ -54,10 +58,33 @@ class ActionManager:
           
         return priority_need["need"]
     
-    def handle_action_picking(self, character, priority_need):
+    def find_location_for_need(self, need, action_list, character):
+        
+        random.shuffle(action_list)
+        print(character.location)
+        self.LM.go_to(character, action_list[0])
+        print(character.location)
+        character.move_timeout = 60
+        
+        pass
+    
+    def handle_action_picking(self, character, priority_need, TM):
+        
+        if character.current_location_time > 120:
+            self.LM.change_location(character, TM)
         
         action_list = self.get_actions(priority_need)
         picked_action = self.pick_action_from_provided_list(character, action_list)
+        
+        while picked_action is None:
+            if character.move_timeout != 0:
+                action_list = self.get_actions('idle')
+                picked_action = self.pick_action_from_provided_list(character, action_list)
+            else:
+                self.find_location_for_need(priority_need, action_list, character)
+                picked_action = self.pick_action_from_provided_list(character, action_list)
+        
+        
         filled_action = self.CM.fill_action_context(character, picked_action)
         character.update_based_on_action(picked_action["timeout"], priority_need, picked_action["restore_value"])
         

@@ -34,17 +34,13 @@ class GameManager:
             if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
                 
                 priority_need = self.AM.determine_which_need_takes_priority(character)
-                filled_action = self.AM.handle_action_picking(character, priority_need)
+                filled_action = self.AM.handle_action_picking(character, priority_need, self.TM)
                 self.TM.create_current_time_for_printing(filled_action)
-                
-                """ if random.randint(1, 100) > 90:
-                    self.LM.change_location(character, self.TM)
-                else:
-                    self.AM.pick_action(character, self.TM, self.LM) """
 
             else:
                 if character.action_timeout != 0:
                     character.decrement_action_timeout()
+                    character.increment_current_location_time()
 
     def run(self):
         

@@ -1,0 +1,121 @@
+{
+    "actions": [
+        {
+            "id": 154,
+            "message": "{name} washed their face and felt instantly more refreshed",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                420,
+                1320
+            ],
+            "timeout": 120,
+            "location": "Room",
+            "restore_value": 25
+        },
+        {
+            "id": 155,
+            "message": "{name} took a quick shower, letting the steam clear their head",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                360,
+                1320
+            ],
+            "timeout": 360,
+            "location": "Room",
+            "restore_value": 60
+        },
+        {
+            "id": 158,
+            "message": "{name} used a public restroom sink to freshen up",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1320
+            ],
+            "timeout": 120,
+            "location": "Street",
+            "restore_value": 20
+        },
+        {
+            "id": 162,
+            "message": "{name} freshened up in the building restroom before going on with their day",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1290
+            ],
+            "timeout": 120,
+            "location": "Building",
+            "restore_value": 25
+        },
+        {
+            "id": 163,
+            "message": "{name} went to the mirror and straightened up their clothes and hair",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                600,
+                1290
+            ],
+            "timeout": 90,
+            "location": "Building",
+            "restore_value": 20
+        },
+        {
+            "id": 164,
+            "message": "{name} brushed their teeth in the office restroom before a meeting",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                540,
+                1080
+            ],
+            "timeout": 360,
+            "location": "Office",
+            "restore_value": 40
+        },
+        {
+            "id": 165,
+            "message": "{name} used the office restroom to wash their hands and pat down their hair",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                480,
+                1200
+            ],
+            "timeout": 90,
+            "location": "Office",
+            "restore_value": 20
+        },
+        {
+            "id": 168,
+            "message": "{name} stopped at a city restroom to wash their hands and fix their hair",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                660,
+                1350
+            ],
+            "timeout": 120,
+            "location": "City",
+            "restore_value": 25
+        },
+        {
+            "id": 169,
+            "message": "{name} used a compact mirror to wipe their face and adjust their appearance on the go",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                720,
+                1320
+            ],
+            "timeout": 150,
+            "location": "City",
+            "restore_value": 20
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "actions": [
+        {
+            "id": 2200,
+            "message": "{name} adjusted the pillows on their bed in their room",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Room",
+            "restore_value": 0
+        },
+        {
+            "id": 2201,
+            "message": "{name} sat on the floor of their room, lost in thought",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Room",
+            "restore_value": 0
+        },
+        {
+            "id": 2202,
+            "message": "{name} leaned against a brick wall downtown, watching people pass by",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Downtown",
+            "restore_value": 0
+        },
+        {
+            "id": 2203,
+            "message": "{name} glanced up at the tall buildings downtown, feeling small but calm",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Downtown",
+            "restore_value": 0
+        },
+        {
+            "id": 2204,
+            "message": "{name} kicked a small pebble along the street",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Street",
+            "restore_value": 0
+        },
+        {
+            "id": 2205,
+            "message": "{name} glanced around at the busy street, waiting for something to happen",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Street",
+            "restore_value": 0
+        },
+        {
+            "id": 2206,
+            "message": "{name} sat on a park bench, watching squirrels dart through the grass",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Park",
+            "restore_value": 0
+        },
+        {
+            "id": 2207,
+            "message": "{name} took a deep breath of fresh air in the park",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Park",
+            "restore_value": 0
+        },
+        {
+            "id": 2208,
+            "message": "{name} checked their watch at the office desk, waiting for a task",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Office",
+            "restore_value": 0
+        },
+        {
+            "id": 2209,
+            "message": "{name} stretched their arms quietly at the office",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Office",
+            "restore_value": 0
+        },
+        {
+            "id": 2210,
+            "message": "{name} leaned on the railing inside the mall, watching shoppers walk past",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Mall",
+            "restore_value": 0
+        },
+        {
+            "id": 2211,
+            "message": "{name} waited near the food court in the mall, idly tapping their foot",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Mall",
+            "restore_value": 0
+        },
+        {
+            "id": 2212,
+            "message": "{name} checked the menu at the restaurant, deciding what to order next time",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Restaurant",
+            "restore_value": 0
+        },
+        {
+            "id": 2213,
+            "message": "{name} sipped water slowly at the restaurant, enjoying the calm atmosphere",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Restaurant",
+            "restore_value": 0
+        },
+        {
+            "id": 2214,
+            "message": "{name} strolled through the city streets, taking in the sights",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "City",
+            "restore_value": 0
+        },
+        {
+            "id": 2215,
+            "message": "{name} stopped at a street corner in the city, watching traffic flow by",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "City",
+            "restore_value": 0
+        },
+        {
+            "id": 2216,
+            "message": "{name} leaned on a fence in the neighborhood, watching kids play nearby",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 25,
+            "location": "Neighborhood",
+            "restore_value": 0
+        },
+        {
+            "id": 2217,
+            "message": "{name} kicked a small stone along the sidewalk in the neighborhood",
+            "required_traits": [],
+            "excluded_traits": [],
+            "time_range": [
+                0,
+                1440
+            ],
+            "timeout": 20,
+            "location": "Neighborhood",
+            "restore_value": 0
+        }
+    ]
+}
