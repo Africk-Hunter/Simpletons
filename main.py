@@ -11,7 +11,7 @@ class GameManager:
         self.LM = LocationManager()
         self.characters = []
         self.colors = [ 32, 33, 34, 35, 36, 37]
-        self.names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave']
+        self.names = ['Hunter', 'Jimothy', 'Bob', 'Aniyah', 'Drew', 'Phoebe', 'Microwave', 'C.P']
     
     def select_from_and_update_array(self, array):
         return_value = random.choice(array)
@@ -40,14 +40,15 @@ class GameManager:
         self.characters.append(character)
 
     def determine_character_actions(self):
+        
         for character in self.characters:
+            character.decay_needs()
             if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
                 
                 priority_need = self.AM.determine_which_need_takes_priority(character)
                 filled_action = self.AM.handle_action_picking(character, priority_need)
                 if filled_action is not None:
                     self.TM.create_current_time_for_printing(filled_action, character)
-
             else:
                 if character.action_timeout != 0:
                     character.decrement_action_timeout()

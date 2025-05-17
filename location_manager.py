@@ -31,6 +31,5 @@ class LocationManager:
         character.location = new_location
         
     def go_to_location(self, character, new_location, time_manager):
-
         self.print_location_change_message(character, new_location, time_manager)
         character.location = new_location
