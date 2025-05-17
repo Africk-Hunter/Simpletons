@@ -11,7 +11,7 @@
             ],
             "timeout": 30,
             "location": "Room",
-            "restore_value": 25
+            "restore_value": 50
         },
         {
             "id": 139,
@@ -24,7 +24,7 @@
             ],
             "timeout": 45,
             "location": "Room",
-            "restore_value": 35
+            "restore_value": 60
         },
         {
             "id": 140,
@@ -37,7 +37,7 @@
             ],
             "timeout": 60,
             "location": "Downtown",
-            "restore_value": 40
+            "restore_value": 60
         },
         {
             "id": 141,
@@ -50,7 +50,7 @@
             ],
             "timeout": 60,
             "location": "Downtown",
-            "restore_value": 30
+            "restore_value": 60
         },
         {
             "id": 142,
@@ -63,7 +63,7 @@
             ],
             "timeout": 45,
             "location": "Street",
-            "restore_value": 25
+            "restore_value": 60
         },
         {
             "id": 143,
@@ -76,7 +76,7 @@
             ],
             "timeout": 60,
             "location": "Street",
-            "restore_value": 30
+            "restore_value": 60
         },
         {
             "id": 144,
@@ -89,7 +89,7 @@
             ],
             "timeout": 60,
             "location": "Park",
-            "restore_value": 35
+            "restore_value": 60
         },
         {
             "id": 145,
@@ -102,7 +102,7 @@
             ],
             "timeout": 45,
             "location": "Park",
-            "restore_value": 30
+            "restore_value": 60
         },
         {
             "id": 146,
@@ -115,7 +115,7 @@
             ],
             "timeout": 30,
             "location": "Building",
-            "restore_value": 20
+            "restore_value": 60
         },
         {
             "id": 147,
@@ -128,7 +128,7 @@
             ],
             "timeout": 45,
             "location": "Building",
-            "restore_value": 30
+            "restore_value": 60
         },
         {
             "id": 148,
@@ -141,7 +141,7 @@
             ],
             "timeout": 45,
             "location": "Office",
-            "restore_value": 25
+            "restore_value": 60
         },
         {
             "id": 149,
@@ -154,7 +154,7 @@
             ],
             "timeout": 60,
             "location": "Office",
-            "restore_value": 35
+            "restore_value": 60
         },
         {
             "id": 150,
@@ -167,7 +167,7 @@
             ],
             "timeout": 75,
             "location": "Restaurant",
-            "restore_value": 40
+            "restore_value": 60
         },
         {
             "id": 151,
@@ -180,7 +180,7 @@
             ],
             "timeout": 60,
             "location": "Restaurant",
-            "restore_value": 30
+            "restore_value": 60
         },
         {
             "id": 152,
@@ -193,7 +193,7 @@
             ],
             "timeout": 75,
             "location": "City",
-            "restore_value": 40
+            "restore_value": 60
         },
         {
             "id": 153,
@@ -206,7 +206,7 @@
             ],
             "timeout": 45,
             "location": "City",
-            "restore_value": 30
+            "restore_value": 60
         }
     ]
 }

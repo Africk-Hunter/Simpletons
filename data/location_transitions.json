@@ -1,32 +1,32 @@
 {
   "transitions": [
     {
-      "message": "{name} stepped out of the Room and started heading to the Downtown.",
+      "message": "{name} stepped out of their house and started heading to the Downtown.",
       "leaving_location": "Room",
       "arriving_location": "Downtown"
     },
     {
-      "message": "{name} left the Room and headed toward the Street.",
+      "message": "{name} left the their room and headed towards main street.",
       "leaving_location": "Room",
       "arriving_location": "Street"
     },
     {
-      "message": "{name} exited the Room, planning to check out the Park next.",
+      "message": "{name} left their house, planning to check out the park next.",
       "leaving_location": "Room",
       "arriving_location": "Park"
     },
     {
-      "message": "Done with the Room, {name} turned and walked toward the Office.",
+      "message": "Done with the sitting around at home, {name} turned and walked toward the office.",
       "leaving_location": "Room",
       "arriving_location": "Office"
     },
     {
-      "message": "{name} glanced around the Room one last time before walking toward the Mall.",
+      "message": "{name} glanced around the living room one last time before walking toward the mall.",
       "leaving_location": "Room",
       "arriving_location": "Mall"
     },
     {
-      "message": "After some thought, {name} left the Room and made their way to the Restaurant.",
+      "message": "After some thought (and some hunger pains), {name} left home and made their way to their favorite restaurant.",
       "leaving_location": "Room",
       "arriving_location": "Restaurant"
     },

@@ -54,7 +54,7 @@ class ActionManager:
         for need, need_data in char_needs.items():
             
             score = (need_data["max_value"] - need_data["value"]) * need_data["priority_weight"]
-            print(need, score)
+
             if score > priority_need["priority_value"]:
                 priority_need["need"] = need
                 priority_need["priority_value"] = score
@@ -74,7 +74,6 @@ class ActionManager:
             character.current_location_time = 0
             return None
         
-        print(priority_need)
         action_list = self.get_actions(priority_need)
         picked_action = self.pick_action_from_provided_list(character, action_list)
         
