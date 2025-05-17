@@ -7,7 +7,7 @@ from character import Character
 class GameManager:
     def __init__(self):
         self.TM = TimeManager()
-        self.AM = ActionManager()
+        self.AM = ActionManager(self.TM)
         self.LM = LocationManager()
         self.characters = []
         self.colors = [ 32, 33, 34, 35, 36, 37]
@@ -44,8 +44,9 @@ class GameManager:
             if (character.action_timeout == 0) and (random.randint(1, 100) > 80):
                 
                 priority_need = self.AM.determine_which_need_takes_priority(character)
-                filled_action = self.AM.handle_action_picking(character, priority_need, self.TM)
-                self.TM.create_current_time_for_printing(filled_action, character)
+                filled_action = self.AM.handle_action_picking(character, priority_need)
+                if filled_action is not None:
+                    self.TM.create_current_time_for_printing(filled_action, character)
 
             else:
                 if character.action_timeout != 0:

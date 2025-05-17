@@ -6,6 +6,10 @@ class LocationManager:
         with open(transitions_file) as f:
             self.transitions = json.load(f)["transitions"]
             
+    def find_location_with_need_type(self, action_list):
+        random.shuffle(action_list)
+        return action_list[0]["location"]
+
     def pick_random_location_from_list(self):
         location_list = ["Room", "Downtown", "Street", "Park", "Office", "Mall", "Restaurant", "City", "Neighborhood"]
         random.shuffle(location_list)

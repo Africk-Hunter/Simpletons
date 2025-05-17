@@ -35,7 +35,7 @@
                 900,
                 1350
             ],
-            "timeout": 120,
+            "timeout": 60,
             "location": "Downtown",
             "restore_value": 40
         },
@@ -87,7 +87,7 @@
                 1080,
                 1350
             ],
-            "timeout": 90,
+            "timeout": 35,
             "location": "Park",
             "restore_value": 30
         },
@@ -100,7 +100,7 @@
                 1140,
                 1410
             ],
-            "timeout": 75,
+            "timeout": 45,
             "location": "Park",
             "restore_value": 25
         },
@@ -152,9 +152,9 @@
                 990,
                 1350
             ],
-            "timeout": 75,
+            "timeout": 25,
             "location": "Office",
-            "restore_value": 25
+            "restore_value": 15
         },
         {
             "id": 132,
@@ -165,7 +165,7 @@
                 1080,
                 1410
             ],
-            "timeout": 120,
+            "timeout": 75,
             "location": "Mall",
             "restore_value": 45
         },
@@ -191,9 +191,9 @@
                 1080,
                 1350
             ],
-            "timeout": 90,
+            "timeout": 20,
             "location": "Restaurant",
-            "restore_value": 30
+            "restore_value": 10
         },
         {
             "id": 135,
@@ -217,9 +217,9 @@
                 1080,
                 1410
             ],
-            "timeout": 90,
+            "timeout": 40,
             "location": "City",
-            "restore_value": 30
+            "restore_value": 20
         },
         {
             "id": 137,
